@@ -1,6 +1,8 @@
-import { Link, redirect } from "react-router-dom";
+import { Link, redirect, useLocation } from "react-router-dom";
 import logo from "../../assets/navbar-logo.svg";
 function Navbar() {
+  const location = useLocation();
+  console.log(location.pathname)
   return (
     <nav className="bg-black flex justify-between items-center px-8 py-1">
       <Link
@@ -18,30 +20,55 @@ function Navbar() {
           <span>GLUG</span>
           <span>NITC</span>
         </div>
-      </Link>
+      </Link>{" "}
       <ul className="nav-menu flex text-white gap-8 text-xl font-normal items-center">
         <li className="nav-item">
-          <Link to="/" className="nav-links bg-primary rounded-lg px-2 py-1">
+          <Link
+            to="/"
+            className={`nav-links  ${
+              location.pathname === "/" ? "nav-link-selected" : ""
+            }`}
+          >
             Home
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/about" className="nav-links">
+          <Link
+            to="/about"
+            className={`nav-links  ${
+              location.pathname.startsWith("/about") ? "nav-link-selected" : ""
+            }`}
+          >
             About Us
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/about" className="nav-links">
+          <Link
+            to="/projects"
+            className={`nav-links  ${
+              location.pathname.startsWith("/projects") ? "nav-link-selected" : ""
+            }`}
+          >
             Projects
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/contact" className="nav-links">
+          <Link
+            to="/linux-guide"
+            className={`nav-links  ${
+              location.pathname.startsWith("/linux-guide") ? "nav-link-selected" : ""
+            }`}
+          >
             Linux installation Guide
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/events" className="nav-links">
+          <Link
+            to="/blog"
+            className={`nav-links  ${
+              location.pathname.startsWith("/blog") ? "nav-link-selected" : ""
+            }`}
+          >
             Blog
           </Link>
         </li>
