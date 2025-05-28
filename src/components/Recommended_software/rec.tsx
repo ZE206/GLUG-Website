@@ -37,7 +37,6 @@ function RecommendedSoftware() {
             This page features essential free and open-source software that can enhance your Linux experience.
             All tools listed here are beginner-friendly and useful for daily use,development,or learning more about your system.
         </h2>
-        <h1>Recommended Software</h1>
         <div className = "flex flex-col gap-20 items-center justify-center w-full">
         <Box icon="📝" title="Text Editor" softwares={recommendedSoftwareList[0]} idx="1" />
         <Box icon="🌐" title="Web Browser" softwares={recommendedSoftwareList[1]} idx="2" />
