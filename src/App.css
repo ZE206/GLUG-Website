@@ -4,3 +4,15 @@
 @theme{
     --font-primary:"Space Grotesk", "sans-serif";
 }
+
+.nav-link-selected{
+    background-color: var(--color-primary);
+    border-radius: 0.5rem;
+}
+
+.nav-links{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
