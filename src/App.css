@@ -3,6 +3,7 @@
 
 @theme{
     --font-primary:"Space Grotesk", "sans-serif";
+    --color-background: "#121212";
 }
 
 .nav-link-selected{
@@ -15,4 +16,10 @@
     padding-right: 0.5rem;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
+}
+.rec{
+    background-color: #191A23;
+}
+.bg{
+    background-color: #121212
 }

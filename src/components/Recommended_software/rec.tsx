@@ -3,7 +3,7 @@ import '../../App.css'
 
 function Box(props: { icon: string; title: string,softwares:software[],idx:string }) {
     return (
-        <div className='flex w-full px-8 gap-5 flex-col'>
+        <div className='flex w-full px-15 py-10 gap-5 flex-col rec rounded-2xl'>
             <div className='w-100 bg-orange-500 flex self-center justify-center items-center p-3 gap-1 text-black font-extrabold rounded-lg text-black-500'>
                 <span>{props.idx}.</span>
                 <div className='text-white'>{props.icon}</div>
@@ -11,7 +11,7 @@ function Box(props: { icon: string; title: string,softwares:software[],idx:strin
             </div>
             <div className='flex flex-col self-start items-start gap-5'>
                 {props.softwares.map((software: software, index: number) => (
-                    <div key={index} className='flex flex-col gap-2 text-left bg-black text-white'>
+                    <div key={index} className='flex flex-col gap-2 text-left text-white'>
                         <span className='text-left text-5xl'>{software.name}</span>
                         <span className='text-left'>{software.description}</span>
                         <span><img src={software.img}></img></span>
@@ -30,14 +30,13 @@ function Box(props: { icon: string; title: string,softwares:software[],idx:strin
 function RecommendedSoftware() {
 
     return (
-        <div className ='flex font-primary   bg-black-500 text-2xl p-5 px-30  w-full h-full items-center bg-black flex gap-5 flex-col text-white'>
+        <div className ='flex font-primary bg  bg-black-500 text-2xl p-5 px-30  w-full h-full items-center bg flex gap-5 flex-col text-white'>
         <Navbar />
         <h1 className='font-bold'>Recommended Softwares for new glugies</h1>
         <h2 className='text-center text-lg w-1/2 mb-4'>
             This page features essential free and open-source software that can enhance your Linux experience.
             All tools listed here are beginner-friendly and useful for daily use,development,or learning more about your system.
         </h2>
-        <h1>Recommended Software</h1>
         <div className = "flex flex-col gap-20 items-center justify-center w-full">
         <Box icon="📝" title="Text Editor" softwares={recommendedSoftwareList[0]} idx="1" />
         <Box icon="🌐" title="Web Browser" softwares={recommendedSoftwareList[1]} idx="2" />
