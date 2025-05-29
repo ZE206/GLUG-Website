@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Header/navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,30 +16,31 @@ function App() {
       <div className="servicesBlock relative">
         <img src="src/assets/services_block.png" alt="services-block" className="w-full h-auto" />
         <Link to="/projects">
-          <button className="bg-transparent backdrop-opacity-10 absolute top-[25.5rem] left-[25rem] h-[4.5rem] w-[15rem] cursor-pointer"></button>
+          <button className="bg-transparent absolute top-[25.5rem] left-[25rem] h-[4.5rem] w-[15rem] cursor-pointer"></button>
         </Link>
       </div>
       <div className="h-[89px] "></div>
       <div className="ctaBlock relative">
         <img src="src/assets/CTA_block.png" alt="CTA Block" className="w-full"/>
         <Link to="/linux-guide">
-          <button className="bg-transparent backdrop-opacity-10 absolute top-[22.4rem] left-[13rem] h-[6rem] w-[15.7rem] cursor-pointer"></button>
+          <button className="bg-transparent absolute top-[22.4rem] left-[13rem] h-[6rem] w-[15.7rem] cursor-pointer"></button>
         </Link>
       </div>
       <div className="h-[89px] "></div>
       <div className="resourcesBlock relative">
         <img src="src/assets/Resources-block.png" alt="Resources Block" className="w-full"/>
         <Link to="/linux-guide">
-          <button className="bg-transparent backdrop-opacity-10 absolute top-[24rem] left-[24rem] h-[3.3rem] w-[13rem] cursor-pointer"></button>
+          <button className="bg-transparent absolute top-[24rem] left-[24rem] h-[3.3rem] w-[13rem] cursor-pointer"></button>
         </Link>
         <Link to="/tutorials">
-          <button className="bg-transparent backdrop-opacity-10 absolute top-[22.5rem] left-[53rem] h-[3.3rem] w-[13rem] cursor-pointer"></button>
+          <button className="bg-transparent absolute top-[22.5rem] left-[53rem] h-[3.3rem] w-[13rem] cursor-pointer"></button>
         </Link>
         <Link to="/recommended">
-          <button className="bg-transparent backdrop-opacity-10 absolute top-[22rem] left-[75rem] h-[3.3rem] w-[12.5rem] cursor-pointer"></button>
+          <button className="bg-transparent absolute top-[22rem] left-[75rem] h-[3.3rem] w-[12.5rem] cursor-pointer"></button>
         </Link>
       </div>
       <div className="h-[89px] "></div>
+      <Footer/>
     </div>
   );
 }
