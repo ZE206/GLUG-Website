@@ -5,11 +5,14 @@ import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import RecommendedSoftware from "./components/Recommended_software/rec.tsx";
 
+const NotFound = () => <div>404 - Page Not Found</div>;
+
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
   { path: "/about", element: <div>About Page</div> },
   { path: "/contact", element: <div>Contact Page</div> },
   { path: "/recommended-software", element: <RecommendedSoftware /> },
+  { path: "*", element: <NotFound /> },
 ]);
 
 createRoot(document.getElementById("root")!).render(
