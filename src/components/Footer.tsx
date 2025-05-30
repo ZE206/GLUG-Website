@@ -2,20 +2,22 @@ import { Link } from "react-router";
 
 const Footer=()=>{
     return (
-        <div className="flex justify-center relative">
-            <img src="src/assets/Footer.png" alt="Footer" />
+        <div className=" container text-xl rounded-2xl  flex justify-between relative w-3/4  mx-auto p-6 text-white items-center">
+            <div className="flex gap-4 items-center text-3xl font-bold"><img src="src/assets/pengu_whitebg.png" alt="Footer" className="h-30" />GLUG NITC</div>
+            <div className="flex justify-between gap-20">
             <Link to="/">
-                <button className="bg-transparent  absolute top-[5rem] left-[53.7rem] h-[2rem] w-[4.5rem] cursor-pointer"></button>
+                Home
             </Link>
             <Link to="/about">
-                <button className="bg-transparent  absolute top-[5rem] left-[59.8rem] h-[2rem] w-[5.4rem] cursor-pointer"></button>
+                About Us
             </Link>
             <Link to="/projects">
-                <button className="bg-transparent  absolute top-[5rem] left-[67rem] h-[2rem] w-[5.4rem] cursor-pointer"></button>
+                Projects
             </Link>
             <Link to="/linux-guide">
-                <button className="bg-transparent  absolute top-[5rem] left-[74rem] h-[2rem] w-[13.7rem] cursor-pointer"></button>
+              Linux Installation guide
             </Link>
+            </div>
         </div>
     )
 }
