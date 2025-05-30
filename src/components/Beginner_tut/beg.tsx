@@ -29,7 +29,7 @@ function terminalcode(str:string, str1:string = "",isgreentext:boolean = false){
 }
 function Beginner(){
     return(
-        <div className='flex font-primary bg  gap-5 flex-col items-center text-white'>
+        <div className='flex font-primary bg w-full gap-5 flex-col items-center text-white'>
             <Navbar/>
             <div className=' flex text-3xl flex-col gap-10 items-center justify-around w-7/8'>
                 <div className='w-full flex flex-col container px-10  py-5 rounded-3xl items-center gap-5'>
