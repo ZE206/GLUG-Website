@@ -12,11 +12,26 @@ function titleCase(str: string) {
         <div className= ' font-extrabold rounded-2xl self-center bg-orange-400 text-black p-5'>{str}</div>
     )
 }
+function terminalcode(str:string, str1:string = "",isgreentext:boolean = false){
+    if(isgreentext){
+        return (
+            <div className='bg p-3 rounded-lg text-sm text-white font-mono'>
+                <span>nmcli dev wifi list</span><span>ncmli dev  wifi connect <span className='text-green-500'>"Your network"</span> password <span className='text-green-500'>"Your password"</span></span>
+            </div>
+        )
+    }
+    return (
+        <div className='bg p-3 rounded-lg text-sm text-white font-mono'>
+            <span className='text-white'>{str}</span>
+            <span className='text-gray-500 text-sm ml-2'>{str1}</span>
+        </div>
+    )
+}
 function Beginner(){
     return(
-        <div className='flex font-primary bg text-2xl bg  gap-5 flex-col items-center text-white'>
+        <div className='flex font-primary bg  gap-5 flex-col items-center text-white'>
             <Navbar/>
-            <div className=' flex text-4xl flex-col gap-10 items-center justify-around w-7/8'>
+            <div className=' flex text-3xl flex-col gap-10 items-center justify-around w-7/8'>
                 <div className='w-full flex flex-col container px-10  py-5 rounded-3xl items-center gap-5'>
                     {titleCase("Getting Started With Linux")}
                     <div className="whitespace-pre-line flex flex-col gap-10">
@@ -140,8 +155,37 @@ function Beginner(){
                                 </div>
                                 </div>
                             </div>
-                                        </div>
+                            </div>
+                    <div className='flex flex-col container px-20  py-10 rounded-3xl gap-15'>
+                        {titleCase("Editing Files in the Terminal")}
+                        <span>Editing files directly from the terminal is an essential skill for Linux users. There are several text editors available that work inside the terminal, letting you quickly view or modify configuration files and scripts without leaving the command line.</span>
+                        {editinginterminal.map((item, index) => (
+                            <div className='flex flex-col gap-5' key={index}>
+                           {item.map((subitem,subind)=>{
+                             if(subind != 3) return<span>{subitem}</span>
+                             else return terminalcode(subitem)
+                           })}
+                            </div>
+                        ))}
+                    </div>
+                    <div className='flex flex-col container px-20  py-10 rounded-3xl gap-15'>
+                        <span className='flex flex-col gap-5'>Check ip and network:<div>{terminalcode("ip a","# Show interfaces and IP's")}{terminalcode("ping google.com #Check connectivity")}{terminalcode("traceroute glug.org","# Trace Packet Route")}</div></span>
+                        <span className='flex flex-col gap-5'>Connect to Wi-Fi(Network Manager){terminalcode("nmcli dev wifi list","")}{terminalcode("","",true)}</span>
+                    </div>
+                    <div className='flex flex-col container px-20  py-10 rounded-3xl gap-15'>
+                        {titleCase("Understanding the Linux File System")}
+                        <div className='flex flex-col gap-5 bg p-3 divide-solid divide-white'>
+                            {directories.map((item, index) => (
+                                <div key={index} className='flex justify-between gap-2'>
+                                    <span className='text-white font-bold'>{item[0]}</span>
+                                    <span className='text-gray-300 border-left'>{item[1]}</span>
+                                </div>
+                            ))}
+                        </div>
+                        <div className='text-black rounded-3xl p-4 bg-[#D9D9D9]'>Warning:Do not change the file directory unless you know what you are doing</div>
+                    </div>
             </div>
+            <Footer/>
         </div>
     )
 
@@ -153,7 +197,30 @@ var arr:string[][] = [
     ["2.System Info & Help",sys],
     ["4.Installing Software",inst]
 ]
+var  editinginterminal:string [][] = [["1.nano",
+                                    "Very beginner-friendly, easy to use.",
+                                    "Commands are shown at the bottom, like Ctrl + O to save, Ctrl + X to exit.",
+                                    "nano filename.txt",
+                                    "Ctrl + O → Save",
+                                    "Click Enter",
+                                    "Ctrl + X → Exit",
+                                        ],
+                                        [
+                                            "2.vim",
+                                            "More advanced, has a steeper learning curve.",
+                                            "Has modes:normal mode(navigation),insert mode(editing).",
+                                            "vim filename.txt",
+                                            "i → Insert mode",
+                                            "Esc → Command mode",
+                                            ":w → Save",
+                                            ":q → qui",
+                                            ":wq → Save and quit",
+                                        ]
+                                    ]
 
+const directories:string [][] = [
+    ["Directory","Description"],["/","Root of everything"],["/home","User files"],["/etc","Configuration files"],["/usr","Installed Software"],["/var","Logs,spools,variable data"],["/tmp","Temporary files"]
+]
 
 
 

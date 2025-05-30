@@ -33,7 +33,7 @@ function App() {
         <Link to="/linux-guide">
           <button className="bg-transparent absolute top-[24rem] left-[24rem] h-[3.3rem] w-[13rem] cursor-pointer"></button>
         </Link>
-        <Link to="/tutorials">
+        <Link to="/beginner-tutorials">
           <button className="bg-transparent absolute top-[22.5rem] left-[53rem] h-[3.3rem] w-[13rem] cursor-pointer"></button>
         </Link>
         <Link to="/recommended-software">
