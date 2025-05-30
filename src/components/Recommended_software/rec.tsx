@@ -1,9 +1,9 @@
 import Navbar from '../Header/navbar';
 import '../../App.css'
-
+import Footer from '../Footer';
 function Box(props: { icon: string; title: string,softwares:software[],idx:string }) {
     return (
-        <div className='flex w-full px-15 py-10 gap-5 flex-col rec rounded-2xl'>
+        <div className='flex w-full px-15 py-10 gap-5 flex-col container rounded-2xl'>
             <div className='w-100 bg-orange-500 flex self-center justify-center items-center p-3 gap-1 text-black font-extrabold rounded-lg text-black-500'>
                 <span>{props.idx}.</span>
                 <div className='text-white'>{props.icon}</div>
@@ -37,7 +37,7 @@ function RecommendedSoftware() {
             This page features essential free and open-source software that can enhance your Linux experience.
             All tools listed here are beginner-friendly and useful for daily use,development,or learning more about your system.
         </h2>
-        <div className = "flex flex-col gap-20 items-center justify-center w-full">
+        <div className = "flex flex-col gap-20 items-center justify-center w-full m-3">
         <Box icon="📝" title="Text Editor" softwares={recommendedSoftwareList[0]} idx="1" />
         <Box icon="🌐" title="Web Browser" softwares={recommendedSoftwareList[1]} idx="2" />
         <Box icon="🎞️" title="Media Players and Editors" softwares={recommendedSoftwareList[2]} idx="3" />
@@ -45,6 +45,7 @@ function RecommendedSoftware() {
         <Box icon="🔧" title="System Utilities" softwares={recommendedSoftwareList[4]} idx="5" />
         <Box icon="🧪" title="Development Tools" softwares={recommendedSoftwareList[5]} idx="6" />
         </div>
+        <Footer />
         </div>
     );
 }

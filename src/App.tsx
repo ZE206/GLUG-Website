@@ -35,7 +35,7 @@ function App() {
         <Link to="/tutorials">
           <button className="bg-transparent absolute top-[22.5rem] left-[53rem] h-[3.3rem] w-[13rem] cursor-pointer"></button>
         </Link>
-        <Link to="/recommended">
+        <Link to="/recommended-software">
           <button className="bg-transparent absolute top-[22rem] left-[75rem] h-[3.3rem] w-[12.5rem] cursor-pointer"></button>
         </Link>
       </div>
