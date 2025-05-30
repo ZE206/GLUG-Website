@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Header/navbar";
 import Footer from "./components/Footer";
+import UserTestimonials from "./components/User_Testimonials";
 
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
           <button className="bg-transparent absolute top-[22rem] left-[75rem] h-[3.3rem] w-[12.5rem] cursor-pointer"></button>
         </Link>
       </div>
+      <div className="h-[89px] "></div>
+      <UserTestimonials/>
       <div className="h-[89px] "></div>
       <Footer/>
     </div>
