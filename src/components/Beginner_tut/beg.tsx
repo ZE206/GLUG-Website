@@ -15,13 +15,13 @@ function titleCase(str: string) {
 function terminalcode(str:string, str1:string = "",isgreentext:boolean = false){
     if(isgreentext){
         return (
-            <div className='bg p-3 rounded-lg text-sm text-white font-mono'>
+            <div className='bg p-3 rounded-lg text-lg text-white font-mono'>
                 <span>nmcli dev wifi list</span><span>ncmli dev  wifi connect <span className='text-green-500'>"Your network"</span> password <span className='text-green-500'>"Your password"</span></span>
             </div>
         )
     }
     return (
-        <div className='bg p-3 rounded-lg text-sm text-white font-mono'>
+        <div className='bg p-3 flex justify-between rounded-lg text-lg text-white font-mono'>
             <span className='text-white'>{str}</span>
             <span className='text-gray-500 text-sm ml-2'>{str1}</span>
         </div>
@@ -169,7 +169,7 @@ function Beginner(){
                         ))}
                     </div>
                     <div className='flex flex-col container px-20  py-10 rounded-3xl gap-15'>
-                        <span className='flex flex-col gap-5'>Check ip and network:<div>{terminalcode("ip a","# Show interfaces and IP's")}{terminalcode("ping google.com #Check connectivity")}{terminalcode("traceroute glug.org","# Trace Packet Route")}</div></span>
+                        <span className='flex flex-col gap-5'>Check ip and network:<div>{terminalcode("ip a","# Show interfaces and IP's")}{terminalcode("ping google.com ","#  Check connectivity")}{terminalcode("traceroute glug.org","# Trace Packet Route")}</div></span>
                         <span className='flex flex-col gap-5'>Connect to Wi-Fi(Network Manager){terminalcode("nmcli dev wifi list","")}{terminalcode("","",true)}</span>
                     </div>
                     <div className='flex flex-col container px-20  py-10 rounded-3xl gap-15'>
@@ -184,6 +184,15 @@ function Beginner(){
                         </div>
                         <div className='text-black rounded-3xl p-4 bg-[#D9D9D9]'>Warning:Do not change the file directory unless you know what you are doing</div>
                     </div>
+                    <div className=' bg-[#D9D9D9] text-black flex flex-col px-20  py-10 rounded-3xl gap-15'>
+                {titleCase("Linux Resources")}
+                <ul className='flex flex-col gap-10'>
+                    <li><a href="https://linuxcommand.org/tlcl.php" className='underline hover:text-orange-400 font-bold'>The Linux Command Line</a>-A beginner friendly book on terminal usage</li>
+                    <li><a href="https://linuxjourney.com/" className=' underline hover:text-orange-400 font-bold'>Linux journey</a> An interactive journey through Linux concepts</li>
+                    <li><a href="https://overapi.com/linux" className=' underline hover:text-orange-400 font-bold'>OverAPI Linux Cheatsheet</a> - A one-page Linux command reference</li>
+                    <li><a href="https://overthewire.org/wargames/bandit/" className='underline hover:text-orange-400 font-bold'>OverTheWire</a> - Bandit Wargame - Learn Linux through fun security challenges</li>
+                </ul>
+            </div>
             </div>
             <Footer/>
         </div>
