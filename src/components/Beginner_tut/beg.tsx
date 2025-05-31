@@ -72,13 +72,41 @@ function Beginner(){
                     <span>What is the Terminal?</span>  
                     <span className='mx-5'>The terminal is a text-based interface that lets you interact with your Linux system directly by typing commands.</span>
                     <span>Basic Linux commands</span>
-                    {arr.map((item, index) => (
-                        <div key={index} className='flex flex-col gap-5'>
-                            <span className=' font-bold'>{item[0]}</span>
-                            <img src={item[1]} alt={item[0]} className='w-full h-auto rounded-2xl mx-15' />
-                        </div>
-                    ))}
-                    <span>Linux uses “package managers” to install and remove software easily. A package manager downloads apps from official repositories and handles dependencies for you.</span>
+                    <div className='text-5xl'>1. NAVIGATION</div>
+                    <div className='flex flex-col gap-5 bg p-3 rounded-lg'>
+                        {terminalcode("pwd","# show current directory")}
+                        {terminalcode("ls","# List files and folders here")}
+                        {terminalcode("cd <folder-name>","# Change directory")}
+                        {terminalcode("ls l","# List files with details")}
+                        {terminalcode("cd ..","# Go back to previous directory")}
+                    </div>
+                    <div className='text-5xl'>2. FILE MANAGEMENT</div>
+                    <div>
+                    {terminalcode("mkdir <new-folder-name>","# Create a new folder(e.g, mkdir my projects)")}
+                    {terminalcode("cd <new-folder-name>","# Go into a new folder")}
+                    {terminalcode("touch <file-name>","# Create a new file(e.g, touch myfile.txt)")}
+                    {terminalcode('echo "Hello Linux" > <file-name.txt>',"# Delete a file(e.g, rm myfile.txt)")}
+                    {terminalcode('cat <file-name>.txt',"# Delete a file(e.g, rm myfile.txt)")}
+                    {terminalcode("cp <source> <destination>","# Copy files or directories")}
+                    {terminalcode("mv <source> <destination>","# Move or rename files or directories")}
+                    {terminalcode("rm <file-name>","# Delete a file(e.g, rm myfile.txt)")}
+                    {terminalcode("rm -r <folder-name>","# Delete a folder and its contents(e.g, rm -r myfolder)")}
+                    </div>
+                    <div className='text-5xl'>3. SYSTEM INFO AND HELP</div>
+                    <div >
+                    {terminalcode("whoami","# Shows your username")}
+                    {terminalcode("uname -a","# Show system information")}
+                    {terminalcode("man <command-name>","# Show help for a command (e.g, man ls)")}
+                    {terminalcode("clear","# Clear the terminal screen")}
+                    </div>
+                    <div className='text-5xl'>4. Installing software(DEBIAN AND UBUNTU BASED)</div>
+                    <div>
+                    {terminalcode("sudo apt update","# Update package list")}
+                    {terminalcode("sudo apt install <package-name>","# Install a package (e.g, sudo apt install vlc)")}
+                    {terminalcode("<package-name>","# Run the installed package (e.g, vlc)")}
+                    {terminalcode("sudo apt remove <package-name>","# Uninstall a package (e.g, sudo apt remove vlc)")}
+                    Linux uses “package managers” to install and remove software easily. A package manager downloads apps from official repositories and handles dependencies for you
+                    </div>
                 </div>
                 <div className=' flex flex-col container px-20  py-20 rounded-3xl gap-15'>
                     {titleCase("Installing and removing software")}
@@ -90,7 +118,10 @@ function Beginner(){
                         <li>3.Arch Linux:pacman</li>
                         <li>steps:</li>
                         <li className='mx-10'>a.Open Terminal</li>
-                        <li className='mx-10'>b.Type the command based on your distro.This is for Ubuntu:<img src = {ubuntu} className='mx-15 my-15'></img></li>
+                        <li className='mx-10'>b.Type the command based on your distro.This is for Ubuntu:
+                            {terminalcode("sudo apt updtae","# Updates the package list")}
+                            {terminalcode("sudo apt install vlc", "#Installs VLC media player")}
+                        </li>
                         <li className='mx-10'>c.Press Enter and enter your password when prompted.</li>
                     </ul>
                     Tip:always run update before installing new software
@@ -200,12 +231,7 @@ function Beginner(){
 
 }
 
-var arr:string[][] = [
-    ["1.Navigation",nav],
-    ["2.File and Folder Management",file],
-    ["2.System Info & Help",sys],
-    ["4.Installing Software",inst]
-]
+
 var  editinginterminal:string [][] = [["1.nano",
                                     "Very beginner-friendly, easy to use.",
                                     "Commands are shown at the bottom, like Ctrl + O to save, Ctrl + X to exit.",
