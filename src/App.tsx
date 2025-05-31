@@ -99,7 +99,7 @@ function App() {
             <div className="title mb-2 text-white font-primary text-2xl">
               Beginner Tutorials
             </div>
-            <Link to="/tutorials">
+            <Link to="/beginner-tutorials">
             <div className="learnMore text-xl text-custom_orange flex items-center">
               Learn More
               <FaArrowRight className="ml-2 rotate-315"/>
@@ -111,7 +111,7 @@ function App() {
             <div className="title mb-2 text-white font-primary text-2xl">
               Recommended Softwares
             </div>
-            <Link to="/recommended-softwares">
+            <Link to="/recommended-software">
             <div className="learnMore text-xl text-custom_orange flex items-center">
               Learn More
               <FaArrowRight className="ml-2 rotate-315"/>
