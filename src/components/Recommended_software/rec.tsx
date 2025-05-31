@@ -1,4 +1,3 @@
-import Navbar from '../Header/navbar';
 import '../../App.css'
 import Footer from '../Footer';
 function Box(props: { icon: string; title: string,softwares:software[],idx:string }) {
@@ -31,7 +30,6 @@ function RecommendedSoftware() {
 
     return (
         <div className ='flex font-primary bg  bg-black-500 text-2xl p-5 px-30  w-full h-full items-center bg flex gap-5 flex-col text-white'>
-        <Navbar />
         <h1 className='font-bold'>Recommended Softwares for new glugies</h1>
         <h2 className='text-center text-lg w-1/2 mb-4'>
             This page features essential free and open-source software that can enhance your Linux experience.

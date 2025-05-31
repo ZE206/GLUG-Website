@@ -3,9 +3,8 @@ import logo from "../../assets/navbar-logo.svg";
 import "../../App.css";
 function Navbar() {
   const location = useLocation();
-  console.log(location.pathname)
   return (
-    <nav className="bg-[#1e1e1e] font-primary w-full flex justify-between items-center px-8 py-1">
+    <nav className=" font-primary w-full flex justify-between items-center px-8 py-1">
       <Link
         to="/"
         className="text-white text-3xl font-bold flex justify-center items-center text-wrap"

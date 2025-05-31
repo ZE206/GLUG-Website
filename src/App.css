@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import "tailwindcss";
 
 @theme{
@@ -7,13 +7,38 @@
     --color-custom_orange: #ff8800;
     --color-custom_blue: #191a23
 }
+:root {
+    --font-primary: "Space Grotesk", "sans-serif";
+    --color-background: #121212;
+    --color-bg2:#F3F3F3;
+    --color-primary: #FF8800;
+}
 
-.nav-link-selected{
+body{
+    background-color: var(--color-background);
+    min-height: 100vh;
+    font-family: var(--font-primary);
+}
+
+@layer components{
+    .title{
+        background-color: var(--color-primary);
+        padding: 0rem .25rem;
+        font-weight: 600;
+        font-size: 2.25rem;
+        border-radius: 5px;
+        width: fit-content;
+        margin: 2rem 0rem;
+    }
+
+}
+
+.nav-link-selected {
     background-color: var(--color-primary);
     border-radius: 0.5rem;
 }
 
-.nav-links{
+.nav-links {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-top: 0.25rem;
@@ -21,7 +46,4 @@
 }
 .container{
     background-color: #191A23;
-}
-.bg{
-    background-color: #121212
 }
