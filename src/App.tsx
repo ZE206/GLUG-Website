@@ -1,17 +1,13 @@
 import { Link } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/Header/navbar";
-import Footer from "./components/Footer";
 import UserTestimonials from "./components/User_Testimonials";
 
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 
-function App() {
-  return (
+function App() {  return (
     <div className="w-full bg-[#121212]">
-      <Navbar />
-      <div className="h-[10rem]"></div>
+      {/* <div className="h-[10rem]"></div> */}
       <div className="landingBox relative w-full h-auto">
         <div className="title text-white text-7xl font-primary text-center font-semibold">May The Foss Be With You</div>
         <div className="body flex justify-between">
@@ -130,7 +126,6 @@ function App() {
         <UserTestimonials/>
       </div>
       <div className="h-[10rem] "></div>
-      <Footer/>
     </div>
   );
 }
