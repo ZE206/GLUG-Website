@@ -3,7 +3,9 @@
 
 @theme{
     --font-primary:"Space Grotesk", "sans-serif";
-    --color-background: "#121212";
+    --color-background: #121212;
+    --color-custom_orange: #ff8800;
+    --color-custom_blue: #191a23
 }
 
 .nav-link-selected{
