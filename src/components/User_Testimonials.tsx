@@ -11,8 +11,8 @@ const UserTestimonials=()=>{
           author:"Thiruchalvan"
         },
         {
-          quote:"You'll learn more CS using Linux in a non CS branch than what you'll learn in CS using windows ",
-          author:"Vysakh Premkumar"
+          quote:"i was a naive young nonchalant first year when i fell in love with her--when i fell in love with foss. it started off slow. subtle glimpses of terminals, shy glances at laptops. i was mesmerised, she looked so difficult yet she was so beautiful. thats when i asked her seasoned suitors, \"how does one master linux?\". he laughed, \"you can never master her. you let her take you for a ride and you enjoy every step of the way\". I took the plunge. downloaded debain sid cos i like them ubstable. bricked (on) me so many times but i still kept going back. how could i go back to boring plain windows after her? she controlled every bare piece of hardware i had on me and i relished every command i demanded of her. then came the hoe phase. every distro, every flavour--i had to taste them all. some were too much for me and some just werent enough. thats when i found her best version. some called her mint but i'd only call her pudhina. perfect in form and function, i knew i had to settle down. this story might end here, but ours has just begun.",
+          author:"Arun Nats"
         },
         {
           quote:"Linux be Good",
@@ -31,7 +31,7 @@ const UserTestimonials=()=>{
       }
     
       const leftArrowClick=()=>{
-        if(currNo==0) setCurrNo(total-1);
+        if(currNo<=0) setCurrNo(total-1);
         else setCurrNo(currNo-1);
     
       }

@@ -4,45 +4,132 @@ import Navbar from "./components/Header/navbar";
 import Footer from "./components/Footer";
 import UserTestimonials from "./components/User_Testimonials";
 
+import { FaCircleArrowRight } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
+
 function App() {
   return (
-    <div className="w-full bg-[#1e1e1e]">
+    <div className="w-full bg-[#121212]">
       <Navbar />
-      <div className="h-[89px]"></div>
+      <div className="h-[10rem]"></div>
       <div className="landingBox relative w-full h-auto">
-        <img src="src/assets/Landing-block.png" alt="landing_box" className="bg-[#1e1e1e] w-full h-auto"/>
-        <img src="src/assets/the_penguins_with_bg.png" alt="GLUG_logo" className="absolute h-[83vh] right-[8rem] top-[6.5rem]" />
+        <div className="title text-white text-7xl font-primary text-center font-semibold">May The Foss Be With You</div>
+        <div className="body flex justify-between">
+          <div className="msg p-20 pl-52 flex flex-col items-start">
+            <div className="subtitle text-white text-7xl/snug font-semibold p-4 ">
+              <h1>Welcome to<br/> Glug NITC!</h1>
+            </div>
+            <div className="subbody mt-2 text-2xl font-primary text-[rgba(170,170,170,0.666)] ml-4">
+              We’re the GNU/Linux Users Group of NIT Calicut.<br/> From kernel to code, we dive deep into the world of<br/> FOSS, create impactful projects, and push the<br/> boundaries of what’s possible with linux and <br/ >beyond.
+            </div>
+          </div>
+          <div className="imgContainer relative hidden md:block">
+            <img src="src/assets/home/bg_for_lux.png" alt="" className="h-[60vh] m-20 mr-40 hidden md:block object-cover"/>
+            <div className="bg-[#ffffff]/40 h-[60vh] w-[37vw] absolute top-[5rem] left-[5rem] rounded-2xl"></div>
+            <img src="src/assets/home/GLUG-logo_without_bg.png" alt="lux" className="absolute h-[60vh] top-[6rem] left-[10rem]" />
+          </div>
+        </div>
       </div>
       <div className="h-[10rem] "></div>
+
       <div className="servicesBlock relative">
-        <img src="src/assets/services_block.png" alt="services-block" className="w-full h-auto" />
-        <Link to="/projects">
-          <button className="bg-transparent absolute top-[25.5rem] left-[25rem] h-[4.5rem] w-[15rem] cursor-pointer"></button>
-        </Link>
+        <div className="exploreTitle bg-custom_orange h-[6vh] w-[7vw] rounded-2xl absolute left-[10rem] flex items-center justify-center text-2xl">Explore
+        </div>
+        <div className="mainServicesBlock bg-custom_orange h-[40vh] w-[50vw] rounded-2xl absolute left-[25rem] top-[5rem] flex justify-between p-10 text-2xl">
+          <div className="textBox flex flex-col justify-between p-10">
+            <div className="title inset-shadow-sm">
+              <div className="openSource">
+                <div className="line1 bg-white h-[4vh] p-2 rounded-md w-[10vw] flex justify-center items-center ">
+                  Open Source
+                </div>
+                <div className="line2 bg-white rounded-md h-[4vh] w-[7vw] p-2 flex justify-center items-center">
+                  Projects
+                </div>
+              </div>
+            </div>
+            <Link to="/projects">
+              <div className="LearnMore flex">
+                <FaCircleArrowRight className="rotate-315 text-4xl mr-3"/>
+                Learn More
+              </div>
+            </Link>
+          </div>
+          <img src="src/assets/home/browser_click.png" alt="image" className="h-[20vh] " />
+        </div>
       </div>
-      <div className="h-[89px] "></div>
+
+      <div className="h-[40rem] "></div>
+
       <div className="ctaBlock relative">
-        <img src="src/assets/CTA_block.png" alt="CTA Block" className="w-full"/>
-        <Link to="/linux-guide">
-          <button className="bg-transparent absolute top-[22.4rem] left-[13rem] h-[6rem] w-[15.7rem] cursor-pointer"></button>
-        </Link>
+        <div className="greyBox absolute left-[20rem] bg-gray-200 rounded-3xl h-[40vh] w-[60vw] p-10 flex">
+          <div className="textBox flex flex-col justify-between ">
+            <div className="textContent text-3xl">
+            Tired of your computer begging for updates<br/>every five minutes and crashing like it’s 1999?<br/>Maybe it’s time to try Linux—because wasting<br/>your life waiting on Windows is so 2000s
+            </div>
+            <div className="installLinuxButton cursor-pointer bg-custom_blue h-[7vh] w-[10vw] mb-2 mr-3 rounded-2xl flex justify-center items-center text-white text-2xl font-primary">
+              Install Linux
+            </div>
+          </div>
+          <div className="imageContainer absolute left-[35vw]">
+            <img src="src/assets/home/weird_bob.png" alt="Hey" />
+          </div>
+        </div>
       </div>
-      <div className="h-[89px] "></div>
-      <div className="resourcesBlock relative">
-        <img src="src/assets/Resources-block.png" alt="Resources Block" className="w-full"/>
-        <Link to="/linux-guide">
-          <button className="bg-transparent absolute top-[24rem] left-[24rem] h-[3.3rem] w-[13rem] cursor-pointer"></button>
-        </Link>
-        <Link to="/beginner-tutorials">
-          <button className="bg-transparent absolute top-[22.5rem] left-[53rem] h-[3.3rem] w-[13rem] cursor-pointer"></button>
-        </Link>
-        <Link to="/recommended-software">
-          <button className="bg-transparent absolute top-[22rem] left-[75rem] h-[3.3rem] w-[12.5rem] cursor-pointer"></button>
-        </Link>
+
+      <div className="h-[30rem] "></div>
+
+      <div className="resourcesBlock flex flex-col p-15 items-center">
+        <div className="exploreTitle self-start bg-custom_orange h-[7vh] w-[18vw] rounded-sm left-[10rem] flex items-center justify-center text-3xl font-semibold  mb-5 ">
+          Resources for Noobies
+        </div>
+        <div className="blueBox bg-custom_blue rounded-3xl h-[25vh] w-[60vw] p-10 flex justify-between">
+          <div className="textbox1 flex flex-col justify-center text-left">
+            <div className="title mb-2 text-white font-primary text-2xl">
+              How to install Linux (With guides)
+            </div>
+            <Link to="/linux-guide">
+            <div className="learnMore text-xl text-custom_orange flex items-center">
+              Learn More 
+              <FaArrowRight className="ml-2 rotate-315"/>
+            </div>
+            </Link>
+          </div>
+          <div className="whiteLine bg-white w-[2px]"></div>
+          <div className="textbox2 flex flex-col justify-center text-left">
+            <div className="title mb-2 text-white font-primary text-2xl">
+              Beginner Tutorials
+            </div>
+            <Link to="/tutorials">
+            <div className="learnMore text-xl text-custom_orange flex items-center">
+              Learn More
+              <FaArrowRight className="ml-2 rotate-315"/>
+            </div>
+            </Link>
+          </div>
+          <div className="whiteLine bg-white w-[2px]"></div>
+          <div className="textbox3 flex flex-col justify-center text-left">
+            <div className="title mb-2 text-white font-primary text-2xl">
+              Recommended Softwares
+            </div>
+            <Link to="/recommended-softwares">
+            <div className="learnMore text-xl text-custom_orange flex items-center">
+              Learn More
+              <FaArrowRight className="ml-2 rotate-315"/>
+            </div>
+            </Link>
+          </div>
+        </div>
       </div>
-      <div className="h-[89px] "></div>
-      <UserTestimonials/>
-      <div className="h-[89px] "></div>
+      
+      <div className="h-[5rem] "/>
+
+      <div className="testimonialsBlock flex flex-col p-15 items-center">
+        <div className="exploreTitle self-start bg-custom_orange h-[7vh] w-[18vw] rounded-sm left-[10rem] flex items-center justify-center text-3xl font-semibold  mb-5 ">
+            Testimonials
+          </div>
+        <UserTestimonials/>
+      </div>
+      <div className="h-[10rem] "></div>
       <Footer/>
     </div>
   );
