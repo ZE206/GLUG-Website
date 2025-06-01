@@ -12,7 +12,7 @@ const AboutPage=()=>{
             <div className="flex justify-center">
                 <div className="grid grid-cols-1 gap-7 md:grid-cols-2 ">
 
-                    <div className="bg-custom_blue h-[35vh] w-[20vw] text-white mr-10 rounded-2xl p-5">
+                    <div className="bg-custom_blue min-h-[35vh] w-[20vw] text-white mr-10 rounded-2xl p-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             Our Philosophy
                         </div>
@@ -21,7 +21,7 @@ const AboutPage=()=>{
                         </div>
                     </div>
 
-                    <div className="bg-gray-100 h-[35vh] w-[20vw] mr-10 rounded-2xl p-5 mt-5">
+                    <div className="bg-gray-100 min-h-[35vh] w-[20vw] mr-10 rounded-2xl p-5 mt-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             What We Do
                         </div>
@@ -30,7 +30,7 @@ const AboutPage=()=>{
                         </div>
                     </div>
                     
-                    <div className="bg-gray-100 h-[35vh] w-[20vw] mr-10 rounded-2xl p-5">
+                    <div className="bg-gray-100 min-h-[35vh] w-[20vw] mr-10 rounded-2xl p-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             How We Learn
                         </div>
@@ -39,7 +39,7 @@ const AboutPage=()=>{
                         </div>
                     </div>
 
-                    <div className="bg-custom_blue h-[35vh] w-[20vw] text-white mr-10 rounded-2xl p-5 mt-5">
+                    <div className="bg-custom_blue min-h-[35vh] w-[20vw] text-white mr-10 rounded-2xl p-5 mt-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             Community Structure
                         </div>
@@ -48,7 +48,7 @@ const AboutPage=()=>{
                         </div>
                     </div>
 
-                    <div className="bg-custom_blue h-[35vh] w-[20vw] text-white mr-10 rounded-2xl p-5">
+                    <div className="bg-custom_blue min-h-[35vh] w-[20vw] text-white mr-10 rounded-2xl p-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             Beyond Campus
                         </div>
@@ -57,7 +57,7 @@ const AboutPage=()=>{
                         </div>
                     </div>
 
-                    <div className="bg-gray-100 h-[35vh] w-[20vw] mr-10 rounded-2xl p-5 mt-5">
+                    <div className="bg-gray-100 min-h-[35vh] w-[20vw] mr-10 rounded-2xl p-5 mt-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             Our History
                         </div>
