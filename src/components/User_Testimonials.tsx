@@ -19,8 +19,8 @@ const UserTestimonials=()=>{
           author:"Fahad Ali Habeeb Pannikaveetil Thirunelli"
         },
         {
-          quote:"fr",
-          author:"Emir Ziyan"
+          quote:"For years as a child I was mesmerized with 3d animations and animation movies. It was a mystery to me how computers were able to generate such masterpieces as Shrek's handsome ahh face. Then I learned about softwares that people use to do so, but as a child from a lower middle class family I never thought I would be able to afford these softwares, let alone the computers to run them on. Imagine my surprise when I learned that Blender, possibly the most popular and powerful one out there, was free and open source. It filled me with so much happiness and gratitude and ecstasy that in just one night, I managed to create a masterpiece that still makes rounds in my social circles",
+          author:"Jibran"
         },
       ]
     
