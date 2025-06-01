@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
+import AboutPage from "./pages/About.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RecommendedSoftware from "./components/Recommended_software/rec.tsx";
 import RootLayout from "./layouts/RootLayout.tsx";
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
         element: <RootLayout />,
         children: [
             { index: true, element: <App /> },
-            { path: "about", element: <div>About Page</div> },
+            { path: "about", element:<AboutPage/> },
             { path: "contact", element: <div>Contact Page</div> },
             { path: "/recommended-software", element: <RecommendedSoftware /> },
             { path: "/opensource-projects", element: <OpensourceProj /> },
