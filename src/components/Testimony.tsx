@@ -13,7 +13,7 @@ interface TestimonyProps {
 const Testimony: React.FC<TestimonyProps> = ({ quote, author, total, currNo, onNext, onPrev }) => {
   return (
     <div className="testimonialsBlock flex justify-center">
-      <div className="bg-[#191a23] rounded-[3rem] p-10 mx-60 text-white w-full overflow-hidden">
+      <div className="bg-[#191a23] rounded-[3rem] p-5 md:p-10 mx-60 text-white w-[90vw] md:w-full overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={currNo} // Key is important to trigger exit/enter
@@ -32,7 +32,7 @@ const Testimony: React.FC<TestimonyProps> = ({ quote, author, total, currNo, onN
           </motion.div>
         </AnimatePresence>
 
-        <div className="arrowBar flex items-center gap-[25vw] mt-[1rem] px-10">
+        <div className="arrowBar flex items-center gap-[10vw] md:gap-[25vw] mt-[1rem] px-10">
           {/* {currNo==0 && <img src="src/assets/dullArrow.png" alt="left arrow" className="cursor-pointer" />} */}
           {/* {currNo!=0 && <img src="src/assets/Arrow.png" alt="left arrow" className="cursor-pointer rotate-180" onClick={onPrev}/>} */}
           <img src="src/assets/Arrow.png" alt="left arrow" className="cursor-pointer rotate-180" onClick={onPrev}/>
