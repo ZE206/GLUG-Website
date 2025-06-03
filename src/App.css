@@ -1,41 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import "tailwindcss";
 
-@theme{
-    --font-primary:"Space Grotesk", "sans-serif";
+@theme {
+    --font-primary: "Space Grotesk", "sans-serif";
     --color-background: #121212;
     --color-custom_orange: #ff8800;
-    --color-custom_blue: #191a23
+    --color-custom_blue: #191a23;
 }
 :root {
     --font-primary: "Space Grotesk", "sans-serif";
     --color-background: #121212;
-    --color-bg2:#F3F3F3;
-    --color-primary: #FF8800;
+    --color-bg2: #f3f3f3;
+    --color-primary: #ff8800;
 }
 
-body{
+body {
     background-color: var(--color-background);
     min-height: 100vh;
     font-family: var(--font-primary);
 }
 
-@layer components{
-    .title{
+@layer components {
+    .title {
         background-color: var(--color-primary);
-        padding: 0rem .25rem;
+        padding: 0rem 0.25rem;
         font-weight: 600;
         font-size: 2.25rem;
         border-radius: 5px;
         width: fit-content;
         margin: 2rem 0rem;
     }
-
 }
 
 .nav-link-selected {
     background-color: var(--color-primary);
     border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
 }
 
 .nav-links {
@@ -44,6 +44,21 @@ body{
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
 }
-.container{
-    background-color: #191A23;
+
+@media (max-width: 640px) {
+    .nav-link-selected {
+        width: 100%;
+        display: block;
+        text-align: right;
+        padding: 0.5rem 1rem;
+    }
+    .nav-links {
+        width: 100%;
+        display: block;
+        text-align: right;
+        padding: 0.5rem 1rem;
+    }
+}
+.container {
+    background-color: #191a23;
 }

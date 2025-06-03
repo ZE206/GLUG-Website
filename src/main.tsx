@@ -8,6 +8,7 @@ import RecommendedSoftware from "./components/Recommended_software/rec.tsx";
 import RootLayout from "./layouts/RootLayout.tsx";
 import OpensourceProj from "./components/Opensource-projects/Opensource-projects.tsx";
 import Beginner from "./components/Beginner_tut/beg.tsx";
+import LIG from "./components/LinuxInstallationGuide/LIG.tsx";
 const NotFound = () => (
     <div className="text-white absolute top-[50%] left-[50%] text-8xl font-bold -translate-1/2 text-nowrap">
         404 - Page Not Found
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
             { path: "/recommended-software", element: <RecommendedSoftware /> },
             { path: "/opensource-projects", element: <OpensourceProj /> },
             { path: "/beginner-tutorials", element: <Beginner /> },
+            { path: "/linux-installation-guide", element: <LIG />},
             { path: "*", element: <NotFound /> },
         ],
     },
