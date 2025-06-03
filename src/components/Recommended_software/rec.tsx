@@ -43,7 +43,6 @@ function RecommendedSoftware() {
         <Box icon="🔧" title="System Utilities" softwares={recommendedSoftwareList[4]} idx="5" />
         <Box icon="🧪" title="Development Tools" softwares={recommendedSoftwareList[5]} idx="6" />
         </div>
-        <Footer />
         </div>
     );
 }
