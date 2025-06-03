@@ -7,21 +7,20 @@ const AboutPage=()=>{
                     The GNU/Linux Users Group of NIT Calicut (GLUG NITC) is a student-run community that advocates for the use and understanding of Free and Open Source Software (FOSS). Founded with the belief that software should be accessible, transparent, and collaborative, GLUG NITC provides a platform for students to explore, contribute to, and create open-source tools and knowledge. We see technology not just as a utility, but as a space for exploration, freedom, and shared growth.
                 </div>
             </div>
-            <div className="h-[5rem]"></div>
+            <div className="h-[5rem] hidden md:block"></div>
 
-            <div className="flex justify-center">
-                <div className="grid grid-cols-1 ml-2 md:ml-0 gap-7 md:grid-cols-2 ">
-
-                    <div className="bg-custom_blue min-h-[35vh] md:w-[20vw] text-white mr-10 rounded-2xl p-5">
+            <div className="md:flex justify-center">
+                <div className="grid grid-cols-1 p-3 md:p-0 md:ml-0 gap-7 md:grid-cols-2 ">
+                    <div className="bg-custom_blue min-h-[35vh] md:w-[20vw] text-white md:mr-10 rounded-2xl p-3 md:p-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             Our Philosophy
                         </div>
                         <div>
                             We believe that computing should empower users — not restrict them. Through open-source software, students can learn from real-world code, understand systems deeply, and contribute meaningfully to global projects. GLUG upholds these values by encouraging self-exploration, reproducibility, and transparency in computing.
                         </div>
-                    </div>ntribute to, and create open-source tools and knowledge. We see technology not just as a utility, bu
+                    </div>
 
-                    <div className="bg-gray-100 min-h-[35vh] md:w-[20vw] mr-10 rounded-2xl p-5 mt-5">
+                    <div className="bg-gray-100 min-h-[35vh] md:w-[20vw] md:mr-10 rounded-2xl p-3 md:p-5 md:mt-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             What We Do
                         </div>
@@ -30,7 +29,7 @@ const AboutPage=()=>{
                         </div>
                     </div>
                     
-                    <div className="bg-gray-100 min-h-[35vh] md:w-[20vw] mr-10 rounded-2xl p-5">
+                    <div className="bg-gray-100 min-h-[35vh] md:w-[20vw] md:mr-10 rounded-2xl p-3 md:p-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             How We Learn
                         </div>
@@ -39,7 +38,7 @@ const AboutPage=()=>{
                         </div>
                     </div>
 
-                    <div className="bg-custom_blue min-h-[35vh] md:w-[20vw] text-white mr-10 rounded-2xl p-5 mt-5">
+                    <div className="bg-custom_blue min-h-[35vh] md:w-[20vw] text-white md:mr-10 rounded-2xl p-3 md:p-5 md:mt-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             Community Structure
                         </div>
@@ -48,7 +47,7 @@ const AboutPage=()=>{
                         </div>
                     </div>
 
-                    <div className="bg-custom_blue min-h-[35vh] md:w-[20vw] text-white mr-10 rounded-2xl p-5">
+                    <div className="bg-custom_blue min-h-[35vh] md:w-[20vw] text-white md:mr-10 rounded-2xl p-3 md:p-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             Beyond Campus
                         </div>
@@ -57,7 +56,7 @@ const AboutPage=()=>{
                         </div>
                     </div>
 
-                    <div className="bg-gray-100 min-h-[35vh] md:w-[20vw] mr-10 rounded-2xl p-5 mt-5">
+                    <div className="bg-gray-100 min-h-[35vh] md:w-[20vw] md:mr-10 rounded-2xl p-3 md:p-5 md:mt-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             Our History
                         </div>
