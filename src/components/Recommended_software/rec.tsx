@@ -2,18 +2,18 @@ import '../../App.css'
 import Footer from '../Footer';
 function Box(props: { icon: string; title: string,softwares:software[],idx:string }) {
     return (
-        <div className='flex w-full px-15 py-10 gap-5 flex-col container rounded-2xl'>
-            <div className='w-100 bg-orange-500 flex self-center justify-center items-center p-3 gap-1 text-black font-extrabold rounded-lg text-black-500'>
+        <div className='flex w-full py-5 md:py-10 gap-5 flex-col container px-5 justify-center rounded-2xl'>
+            <div className='w-full bg-orange-500 flex self-center justify-center items-center p-3 gap-1 text-black font-extrabold rounded-lg text-black-500 md:w-1/3'>
                 <span>{props.idx}.</span>
                 <div className='text-white'>{props.icon}</div>
                 <div className=''>{props.title}</div>
             </div>
             <div className='flex flex-col self-start items-start gap-5'>
                 {props.softwares.map((software: software, index: number) => (
-                    <div key={index} className='flex flex-col gap-2 text-left text-white'>
-                        <span className='text-left text-5xl'>{software.name}</span>
+                    <div key={index} className='flex flex-col gap-5 text-left text-white'>
+                        <span className='text-left text-3xl md:text-5xl self-center md:self-baseline'>{software.name}</span>
                         <span className='text-left'>{software.description}</span>
-                        <span><img src={software.img}></img></span>
+                        <span className=''><img src={software.img} className=' object-left h-10 object-cover md:w-full md:h-full'></img></span>
                     </div>
                 ))}
             </div>
@@ -29,9 +29,9 @@ function Box(props: { icon: string; title: string,softwares:software[],idx:strin
 function RecommendedSoftware() {
 
     return (
-        <div className ='flex font-primary bg  bg-black-500 text-2xl p-5 px-30  w-full h-full items-center bg flex gap-5 flex-col text-white'>
-        <h1 className='font-bold'>Recommended Softwares for new glugies</h1>
-        <h2 className='text-center text-lg w-1/2 mb-4'>
+        <div className =' font-primary text-lg md:text-2xl px-5 py-10 w-full h-full items-center bg flex  flex-col gap-5  text-white'>
+        <h1 className='font-bold text-2xl px-3  '>Recommended Softwares for new gluggies</h1>
+        <h2 className='text-center text-sm md:text-lg w-full md:w-1/2 mb-4'>
             This page features essential free and open-source software that can enhance your Linux experience.
             All tools listed here are beginner-friendly and useful for daily use,development,or learning more about your system.
         </h2>
