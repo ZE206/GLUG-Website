@@ -55,9 +55,9 @@ function App() {  return (
       </div>
 
       <div className="ctaBlock flex justify-center mt-[5rem] md:mt-[10rem]">
-        <div className="greyBox left-[20rem] bg-gray-200 rounded-3xl h-[50vh] md:h-[40vh] w-[80vw] md:w-[60vw] p-5 md:p-10 flex justify-around">
+        <div className="greyBox left-[20rem] bg-gray-200 rounded-3xl md:h-[50vh] w-[80vw] md:w-[60vw] p-5 md:p-10 flex justify-around">
           <div className="textBox flex flex-col justify-between ">
-            <div className="textContent text-2xl">
+            <div className="textContent text-2xl mb-4 md:mb-0">
             Tired of your computer begging for updates<br/>every five minutes and crashing like it’s 1999?<br/>Maybe it’s time to try Linux—because wasting<br/>your life waiting on Windows is so 2000s
             </div>
             <div className="installLinuxButton cursor-pointer bg-custom_blue h-[7vh] md:w-[10vw] mb-2 mr-3 rounded-2xl flex justify-center items-center text-white text-2xl font-primary">
