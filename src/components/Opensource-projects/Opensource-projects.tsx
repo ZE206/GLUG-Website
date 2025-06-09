@@ -10,7 +10,6 @@ function Card(props: {
 }) {
     return (
         <div className="bg-bg2 flex flex-col lg:flex-row py-4 lg:py-6 px-3 lg:px-6 justify-center rounded-[45px] mb-8 lg:mb-8 gap-6 lg:gap-8 min-h-96">
-            {/* IMAGE FIRST on mobile, LEFT on desktop */}
             <div className="w-full lg:w-2/5 flex justify-center my-auto order-1">
                 <img
                     className="w-[85%] lg:w-full max-h-56 lg:max-h-72 max-w-lg object-contain"
@@ -18,7 +17,6 @@ function Card(props: {
                     alt={props.alt}
                 />
             </div>{" "}
-            {/* TEXT + BUTTONS SECOND on mobile, RIGHT on desktop */}
             <div className="w-full lg:w-2/5 my-auto text-center lg:text-left order-2 lg:order-none px-3 lg:px-4">
                 <p className="font-semibold text-xl sm:text-2xl xl:text-3xl mb-5 lg:mb-8">
                     {props.text}
