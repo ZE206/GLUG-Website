@@ -2,33 +2,41 @@ import React from "react";
 import { Link } from "react-router-dom";
 function Card(item: any) {
     return (
-        <div className="bg-custom_blue rounded-[45px] p-16 mb-14 text-white text-2xl">
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
+        <div className="bg-custom_blue rounded-[45px] p-8 sm:p-16 mb-8 sm:mb-14 text-white">
+            <h3 className="text-lg sm:text-2xl">{item.title}</h3>
+            <p className="text-base sm:text-2xl mt-2">{item.description}</p>
             <iframe
                 src={item.video_url}
                 title="YouTube video player"
                 width={"90%"}
                 height="auto"
                 allowFullScreen
-                className="mx-auto my-8 rounded-4xl aspect-video"
+                className="mx-auto my-6 sm:my-8 rounded-lg sm:rounded-4xl aspect-video"
             ></iframe>{" "}
-            <div className="flex items-center gap-4">
-                <img src="src/assets/internet 2.svg" alt="internet-icon" />
+            <div className="flex items-center gap-3 sm:gap-4">
+                <img
+                    src="src/assets/internet 2.svg"
+                    alt="internet-icon"
+                    className="w-6 sm:w-auto"
+                />
                 <Link
                     to={item.website_url}
-                    className="underline decoration-1 underline-offset-3"
+                    className="underline decoration-1 underline-offset-3 text-sm sm:text-2xl"
                 >
                     {item.website}
                 </Link>
-            </div>
-            <div className="flex items-center gap-4 mt-4">
-                <img src="src/assets/inss 2.svg" alt="settings0-icon" />
-                <span>
+            </div>{" "}
+            <div className="flex items-center gap-3 sm:gap-4 mt-3 sm:mt-4">
+                <img
+                    src="src/assets/inss 2.svg"
+                    alt="settings0-icon"
+                    className="w-6 scale-120 sm:w-auto sm:scale-100"
+                />
+                <span className="text-sm sm:text-2xl">
                     Installation of {item.title} OS:{" "}
                     <Link
                         to={item.guide_url}
-                        className="underline decoration-1 underline-offset-3"
+                        className="underline decoration-1 underline-offset-3 text-sm sm:text-2xl"
                     >
                         {item.guide}
                     </Link>
@@ -40,8 +48,8 @@ function Card(item: any) {
 
 const LIG = () => {
     return (
-        <div className="w-4/5 mx-auto my-16 font-medium">
-            <h1 className="bg-[#D9D9D9] rounded-4xl py-2 px-4 w-fit  text-3xl mb-8">
+        <div className="w-[90%] sm:w-4/5 mx-auto my-8 sm:my-16 font-medium">
+            <h1 className="bg-[#D9D9D9] rounded-4xl py-2 px-4 w-fit text-xl sm:text-3xl mb-6 sm:mb-8">
                 Not sure where to start? Try ubuntu
             </h1>{" "}
             <Card
@@ -53,7 +61,6 @@ const LIG = () => {
                 guide_url="https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview"
                 video_url="https://www.youtube.com/embed/POf5mCs5YgI"
             />
-           
             <Card
                 title="Fedora"
                 description="Fedora is modern, fast, and open-source-only — you always get the latest software. Great for developers and privacy lovers."

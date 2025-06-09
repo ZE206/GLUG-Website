@@ -11,10 +11,20 @@ function Carousel<T>({ items, renderItem }: CarouselProps<T>) {
     const [currentPage, setCurrentPage] = useState(0);
     const itemsPerPage = {
         mobile: 1,
+        tablet: 2,
         desktop: 3,
     };
 
-    const totalPages = Math.ceil(total / itemsPerPage.desktop);
+    const getItemsPerPage = () => {
+        if (typeof window !== "undefined" && window.innerWidth < 640) {
+            return itemsPerPage.mobile;
+        } else if (typeof window !== "undefined" && window.innerWidth < 1024) {
+            return itemsPerPage.tablet;
+        }
+        return itemsPerPage.desktop;
+    };
+
+    const totalPages = Math.ceil(total / getItemsPerPage());
 
     const rightArrowClick = () => {
         setCurrentPage((prev) => (prev + 1) % totalPages);
@@ -23,10 +33,10 @@ function Carousel<T>({ items, renderItem }: CarouselProps<T>) {
     const leftArrowClick = () => {
         setCurrentPage((prev) => (prev === 0 ? totalPages - 1 : prev - 1));
     };
-
     const getCurrentItems = () => {
-        const start = currentPage * itemsPerPage.desktop;
-        const end = Math.min(start + itemsPerPage.desktop, total);
+        const itemsPerScreen = getItemsPerPage();
+        const start = currentPage * itemsPerScreen;
+        const end = Math.min(start + itemsPerScreen, total);
         return items.slice(start, end);
     };
 
@@ -40,7 +50,7 @@ function Carousel<T>({ items, renderItem }: CarouselProps<T>) {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -50 }}
                         transition={{ duration: 0.4 }}
-                        className="grid grid-cols-1 md:grid-cols-3 gap-6"
+                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
                     >
                         {getCurrentItems().map((item, idx) => (
                             <div key={idx} className="flex-1">

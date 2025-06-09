@@ -33,28 +33,28 @@ function Navbar() {
         setSidebarOpen(!sidebarOpen);
     };
     return (
-        <nav className=" font-primary w-full flex justify-between items-center px-8 py-1">
+        <nav className="font-primary w-full flex justify-between items-center px-4 sm:px-6 lg:px-8 py-1">
             <Link
                 to="/"
-                className="text-white text-3xl font-bold flex justify-center items-center text-wrap"
+                className="text-white text-2xl sm:text-3xl font-bold flex justify-center items-center text-wrap"
             >
                 <img
                     src={logo}
                     alt="main-navbar-logo"
                     height={100}
                     width={100}
-                    className="object-cover m-4"
+                    className="object-cover m-2 sm:m-4 w-[80px] sm:w-[100px]"
                 />
                 <div className="flex flex-col">
                     <span>GLUG</span>
                     <span>NITC</span>
                 </div>
             </Link>{" "}
-            <ul className="hidden sm:flex nav-menu text-white gap-8 text-xl font-normal items-center">
+            <ul className="hidden md:flex nav-menu text-white gap-2 lg:gap-6 xl:gap-8 text-sm md:text-[13px] lg:text-base xl:text-xl font-normal items-center">
                 <li className="nav-item">
                     <Link
                         to="/"
-                        className={`nav-links  ${
+                        className={`nav-links whitespace-nowrap ${
                             location.pathname === "/" ? "nav-link-selected" : ""
                         }`}
                     >
@@ -84,11 +84,11 @@ function Navbar() {
                     >
                         Projects
                     </Link>
-                </li>
+                </li>{" "}
                 <li className="nav-item">
                     <Link
                         to="/linux-installation-guide"
-                        className={`nav-links  ${
+                        className={`nav-links text-nowrap ${
                             location.pathname.startsWith(
                                 "/linux-installation-guide"
                             )
@@ -98,8 +98,8 @@ function Navbar() {
                     >
                         Linux installation Guide
                     </Link>
-                </li>
-                <li className="nav-item rounded-xl bg-[#1E1E1E] text-primary text-orange-500 font-light py-4 px-7">
+                </li>{" "}
+                <li className="nav-item rounded-xl bg-[#1E1E1E] text-primary text-orange-500 font-light py-2 md:py-2.5 lg:py-3 xl:py-4 px-4 md:px-5 lg:px-6 xl:px-7">
                     <button onClick={() => redirect("")}>Contribute</button>
                 </li>
             </ul>{" "}
@@ -107,7 +107,7 @@ function Navbar() {
             <img
                 src="src/assets/navOpt.svg"
                 alt="nav-options"
-                className="block sm:hidden cursor-pointer"
+                className="block md:hidden cursor-pointer"
                 onClick={toggleSidebar}
                 ref={buttonRef}
             />
@@ -115,7 +115,7 @@ function Navbar() {
                 ref={sidebarRef}
                 className={`${
                     sidebarOpen ? "block" : "hidden"
-                } fixed right-8 top-24 rounded-2xl w-72 bg-[#0000004D] backdrop-blur-sm text-white p-8 z-50`}
+                } fixed right-8 top-24 rounded-2xl w-72 bg-[#0000004D] backdrop-blur-md text-white p-6 z-50`}
             >
                 {" "}
                 <ul className="flex flex-col w-full gap-4">
