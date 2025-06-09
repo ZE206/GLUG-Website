@@ -1,112 +1,130 @@
 import '../../App.css'
 import Footer from '../Footer';
-function Box(props: { icon: string; title: string,softwares:software[],idx:string }) {
+
+function terminalcode(str:string, str1:string = "",isgreentext:boolean = false){
+    if(isgreentext){
+        return (
+            <div className='bg rounded-lg text-sm md:text-lg text-white font-mono'>
+                <span>nmcli dev wifi list</span><span>ncmli dev  wifi connect <span className='text-green-500'>"Your network"</span> password <span className='text-green-500'>"Your password"</span></span>
+            </div>
+        )
+    }
     return (
-        <div className='flex w-full py-5 md:py-10 gap-5 flex-col container px-5 justify-center rounded-2xl'>
-            <div className='w-full bg-orange-500 flex self-center justify-center items-center p-3 gap-1 text-black font-extrabold rounded-lg text-black-500 md:w-1/3'>
-                <span>{props.idx}.</span>
-                <div className='text-white'>{props.icon}</div>
-                <div className=''>{props.title}</div>
-            </div>
-            <div className='flex flex-col self-start items-start gap-5'>
-                {props.softwares.map((software: software, index: number) => (
-                    <div key={index} className='flex flex-col gap-5 text-left text-white'>
-                        <span className='text-left text-3xl md:text-5xl self-center md:self-baseline'>{software.name}</span>
-                        <span className='text-left'>{software.description}</span>
-                        <span className=''><img src={software.img} className=' object-left h-10 object-cover md:w-full md:h-full'></img></span>
-                    </div>
-                ))}
-            </div>
+        <div className='bg p-3 flex justify-between rounded-lg text-sm md:text-lg text-white font-mono'>
+            <span className='text-white'>{str}</span>
+            <span className='text-gray-500 text-sm ml-2'>{str1}</span>
         </div>
-    );
+    )
 }
-
-
-
-
-
 
 function RecommendedSoftware() {
 
-    return (
-        <div className =' font-primary text-lg md:text-2xl px-5 py-10 w-full h-full items-center bg flex  flex-col gap-5  text-white'>
-        <h1 className='font-bold text-2xl px-3  '>Recommended Softwares for new gluggies</h1>
-        <h2 className='text-center text-sm md:text-lg w-full md:w-1/2 mb-4'>
-            This page features essential free and open-source software that can enhance your Linux experience.
-            All tools listed here are beginner-friendly and useful for daily use,development,or learning more about your system.
-        </h2>
-        <div className = "flex flex-col gap-20 items-center justify-center w-full m-3">
-        <Box icon="📝" title="Text Editor" softwares={recommendedSoftwareList[0]} idx="1" />
-        <Box icon="🌐" title="Web Browser" softwares={recommendedSoftwareList[1]} idx="2" />
-        <Box icon="🎞️" title="Media Players and Editors" softwares={recommendedSoftwareList[2]} idx="3" />
-        <Box icon="📁" title="Office & Productivity" softwares={recommendedSoftwareList[3]} idx="4" />
-        <Box icon="🔧" title="System Utilities" softwares={recommendedSoftwareList[4]} idx="5" />
-        <Box icon="🧪" title="Development Tools" softwares={recommendedSoftwareList[5]} idx="6" />
-        </div>
-        </div>
-    );
+     const sections = [
+    {
+      id: "1",
+      title: "📝Text Editor",
+      name: "Gedit",
+      description:
+        "Default text editor for GNOME desktop. Usually pre-installed on most GNOME-based Linux distributions. If not installed, use your package manager.",
+      commands: [
+        { distro: "Debian/Ubuntu", command: "sudo apt install gedit" },
+        { distro: "Fedora", command: "sudo dnf install gedit" },
+      ],
+      note: "VSCode",
+      noteDescription: "Feature-rich code editor by Microsoft. To install, visit the official website.",
+      noteCommand: "sudo snap install code --classic",
+    },
+    {
+      id: "2",
+      title: "🌐Web Browser",
+      name: "Firefox",
+      description:
+        "Default web browser in many Linux distributions (like Ubuntu, Debian, Fedora). Usually pre-installed. If not, you can install using:",
+      commands: [
+        { distro: "Debian/Ubuntu", command: "sudo apt install firefox" },
+        { distro: "Fedora", command: "sudo dnf install firefox" },
+      ],
+    },
+    {
+      id: "3",
+      title: "🎞️Media Players and Editors",
+      name: "VLC (VideoLAN Client) Media Player",
+      description:
+        "Versatile media player that supports a wide variety of audio and video formats. Often pre-installed, but:",
+      commands: [
+        { distro: "Debian/Ubuntu", command: "sudo apt install vlc" },
+        { distro: "Fedora", command: "sudo dnf install vlc" },
+      ],
+    },
+    {
+      id: "4",
+      title: "📁Office & Productivity",
+      name: "LibreOffice",
+      description:
+        "Full-featured, open-source office suite — a powerful alternative to Microsoft Office. Usually pre-installed on many Linux distributions. If not, you can install it with:",
+      commands: [
+        { distro: "Debian/Ubuntu", command: "sudo apt install libreoffice" },
+        { distro: "Fedora", command: "sudo dnf install libreoffice" },
+      ],
+    },
+    {
+      id: "5",
+      title: " 🔧System Utilities",
+      name: "GParted",
+      description:
+        "GParted is a tool used to manage your hard drive or USB drive. Usually pre-installed but can be installed with:",
+      commands: [
+        { distro: "Debian/Ubuntu", command: "sudo apt install gparted" },
+        { distro: "Fedora", command: "sudo dnf install gparted" },
+      ],
+    },
+    {
+      id: "6",
+      title: "🧪Development Tools",
+      name: "Git",
+      description:
+        "Git is a free and open-source version control system. It helps you track changes in your code and collaborate with others. Whether you're working on personal projects or with a team, Git keeps your project organized and safe. Usually not preinstalled and can be installed using:",
+      commands: [
+        { distro: "Debian/Ubuntu", command: "sudo apt install git" },
+        { distro: "Fedora", command: "sudo dnf install git" },
+      ],
+    },
+  ]
+
+  return (
+    <div className="bg-[#121212] text-white font-mono text-lg p-6 h-full">
+      <div className="w-full flex flex-col p-3 gap-7 text-xs md:text-base">
+        {sections.map((section) => (
+          <div key={section.id} className="p-4 container flex rounded-2xl gap-3 flex-col">
+            <div className="bg-orange-500 text-black px-4 py-2 text-xs md:text-base flex self-center  font-bold text-center rounded">
+              {section.id}. {section.title}
+            </div>
+            <h2 className="text-5xl font-bold text-white">{section.name}</h2>
+            <p className="text-gray-300">{section.description}</p>
+            <div className="rounded-2xl p-3 flex flex-col bg-[#121212]">
+              {section.commands.map((cmd, index) => (
+                <div key={index} className="flex gap-4 justify-between  ">
+                  <span className="text-white font-bold">{cmd.command}</span>
+                  <span className="text-gray-500">#{cmd.distro}</span>
+                </div>
+              ))}
+            </div>
+
+            {section.note && (
+              <div className="mt-4 space-y-2 rounded-2xl ">
+                <h3 className="text-5xl font-bold text-white">{section.note}</h3>
+                <p className="text-gray-300">{section.noteDescription}</p>
+                <div className="flex items-center space-x-4 bg-[#121212] rounded-2xl p-3">
+                  <span className=" font-bold">{section.noteCommand}</span>
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  )
 }
 
 
-class software {
-    name: string;
-    description: string;
-    img: string;
-
-    constructor(name: string, description: string, img: string) {
-        this.name = name;
-        this.description = description;
-        this.img = img;
-    }
-}
-
-const recommendedSoftwareList: software[][] = [
-    [
-        new software(
-            'Gedit',
-            "Default text editor for GNOME desktop. Usually pre-installed on most GNOME-based Linux distributions. If not installed, use your package manager.",
-            '/src/assets/gedit.png' 
-        ),
-        new software(
-            'VSCode',
-            'Feature-rich code editor by Microsoft. To install, visit the official website.',
-            '/src/assets/vscode.png'
-        )
-    ],
-    [
-        new software(
-            'Firefox',
-            'Default web browser in many Linux distributions (like Ubuntu, Debian, Fedora).\nUsually pre-installed.\nIf not, you can install it using:',
-            '/src/assets/firefox.png'
-        ),
-    ],
-    [
-        new software(
-            'VLC (VideoLAN Client) Media Player',
-            'Versatile media player that supports almost all audio and video formats.\nOften pre-installed,if not:',
-            '/src/assets/VLC.png'
-        )
-    ],
-    [
-        new software(
-            'LibreOffice',
-            'Full-featured, open source office suite — a powerful alternative to Microsoft Office\nUsually pre-installed on many Linux distributions.\nIf not, you can install it with.',
-            '/src/assets/LibreOffice.png'
-        )
-    ], [
-        new software(
-            'GParted',
-            'GParted is a tool used to manage your hard drive or USB drive.\nUsually pre-installed but can be installed with',
-            '/src/assets/Gpart.png'
-        )
-    ],
-    [
-        new software(
-            'Git',
-            'Git is a free and open-source version control system. It helps you track changes in your code and collaborate with others.\n\nWhether you’re working alone or with a team, Git helps keep your projects organized and safe.\n\nUsually not preinstalled and can be installed using',
-            '/src/assets/git.png'
-        )
-    ]
-
-];
 export default RecommendedSoftware;
