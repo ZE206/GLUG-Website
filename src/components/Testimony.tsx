@@ -13,7 +13,7 @@ interface TestimonyProps {
 const Testimony: React.FC<TestimonyProps> = ({ quote, author, total, currNo, onNext, onPrev }) => {
   return (
     <div className="testimonialsBlock flex justify-center">
-      <div className="bg-[#191a23] rounded-[3rem] p-6 md:p-10 md:mx-60 text-white w-[90vw] md:w-full overflow-hidden">
+      <div className="bg-[#191a23] rounded-[3rem] p-6 md:p-10 lg:mx-60 text-white w-[90vw] md:w-full overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={currNo} // Key is important to trigger exit/enter

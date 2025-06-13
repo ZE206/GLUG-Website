@@ -7,12 +7,13 @@ import { FaArrowRight } from "react-icons/fa";
 
 function App() {  return (
     <div className="w-full bg-[#121212]">
-      {/* <div className="h-[10rem]"></div> */}
-      <div className="landingBox">
-        <div className="text-white text-5xl md:text-7xl font-primary text-center font-semibold">May The Foss Be With You</div>
+      <div className="h-[2rem] md:h-[3rem]"></div>
+
+      <div className="titleBlock">
+        <div className="text-white text-5xl md:text-[4rem] lg:text-7xl mt-5 md:mt-0 px-1 md:px-3 lg:px-0 font-primary text-center font-semibold">May The Foss Be With You</div>
         <div className="body md:flex md:justify-between">
-          <div className="msg p-2 md:p-20 md:pl-52 flex flex-col items-center md:items-start">
-            <div className="subtitle text-white text-4xl md:text-7xl/snug font-semibold p-4 md:text-left text-center">
+          <div className="msg p-2 md:p-10 lg:p-20 lg:pl-52 flex flex-col items-center md:items-start">
+            <div className="subtitle text-white text-4xl md:text-5xl lg:text-7xl/snug font-semibold p-4 md:text-left text-center">
               <h1>Welcome to<br/> Glug NITC!</h1>
             </div>
             <div className="subbody mt-2 text-2xl font-primary md:text-left text-center text-[rgba(170,170,170,0.666)] md:ml-4 w-[80vw] md:w-[30vw]">
@@ -20,25 +21,25 @@ function App() {  return (
             </div>
           </div>
           <div className="imgContainer relative hidden md:block">
-            <img src="src/assets/home/bg_for_lux.png" alt="" className="h-[60vh] m-20 mr-40 hidden md:block object-cover"/>
-            <div className="bg-[#ffffff]/40 h-[60vh] w-[37vw] absolute top-[5rem] left-[5rem] rounded-2xl"></div>
-            <img src="src/assets/home/GLUG-logo_without_bg.png" alt="lux" className="absolute hidden md:block h-[60vh] top-[6rem] left-[10rem]" />
+            <img src="src/assets/home/bg_for_lux.png" alt="" className="md:h-[30vh] lg:h-[60vh] m-20 lg:mr-40 md:w-[40vw] lg:w-auto lg:object-cover"/>
+            <div className="bg-[#ffffff]/40 md:h-[30vh] lg:h-[60vh] md:w-[40vw] lg:w-[37vw] absolute top-[5rem] left-[5rem] rounded-2xl"></div>
+            <img src="src/assets/home/GLUG-logo_without_bg.png" alt="lux" className="absolute hidden md:block md:h-[30vh] lg:h-[60vh] md:top-[7rem] md:left-[5.5rem] lg:top-[6rem] lg:left-[10rem]" />
           </div>
         </div>
       </div>
 
-      <div className="servicesBlock flex flex-col items-center p-5 md:p-10 gap-[5rem] mt-10 md:mt-0">
-        <div className="exploreTitle self-start bg-custom_orange h-[7vh] w-[35vw] md:w-[18vw] rounded-sm left-[10rem] flex items-center justify-center text-3xl font-semibold  md:mb-5 ">
+      <div className="exploreBlock flex flex-col items-center p-5 md:p-10 gap-[5rem] mt-10 md:mt-0">
+        <div className="title self-start mb-0">
           Explore
         </div>
-        <div className="mainServicesBlock bg-custom_orange h-[30vh] md:h-[40vh] w-[80vw] md:w-[50vw] rounded-2xl md:flex md:justify-between p-5 md:p-10 text-2xl">
-          <div className="textBox flex flex-col justify-between md:p-10">
+        <div className="mainServicesBlock bg-custom_orange h-[30vh] md:h-[30vh] lg:h-[40vh] w-[80vw] lg:w-[50vw] rounded-2xl md:flex md:justify-between p-5 md:p-10 text-2xl">
+          <div className="textBox flex flex-col items-center justify-between md:items-start md:p-10">
             <div className="title inset-shadow-sm">
-              <div className="openSource">
-                <div className="line1 bg-white h-[5vh] p-2 rounded-md w-[65vw] md:w-[15vw] flex justify-center items-center ">
+              <div className="openSource flex flex-col items-center justify-between md:block">
+                <div className="line1 bg-white rounded-md h-[5vh] md:h-[4vh] lg:h-[5vh] p-2 w-[65vw] md:w-[27vw] lg:w-[15vw] flex justify-center items-center">
                   Open Source
                 </div>
-                <div className="line2 bg-white rounded-md h-[5vh] w-[45vw] md:w-[11vw] p-2 flex justify-center items-center">
+                <div className="line2 bg-white rounded-md h-[5vh] md:h-[4vh] lg:h-[5vh] p-2 w-[45vw] md:w-[20vw] lg:w-[11vw] flex justify-center items-center">
                   Projects
                 </div>
               </div>
@@ -55,28 +56,28 @@ function App() {  return (
       </div>
 
       <div className="ctaBlock flex justify-center mt-[5rem] md:mt-[10rem]">
-        <div className="greyBox left-[20rem] bg-gray-200 rounded-3xl md:h-[50vh] w-[80vw] md:w-[60vw] p-5 md:p-10 flex justify-around">
+        <div className="greyBox left-[20rem] bg-gray-200 rounded-3xl md:h-[35vh] lg:h-[50vh] w-[80vw] md:w-[75vw] lg:w-[60vw] p-5 md:p-10 flex md:justify-between lg:justify-around">
           <div className="textBox flex flex-col justify-between ">
-            <div className="textContent text-2xl mb-4 md:mb-0">
+            <div className="textContent text-2xl md:text-xl lg:text-2xl mb-4 md:mb-0">
             Tired of your computer begging for updates<br/>every five minutes and crashing like it’s 1999?<br/>Maybe it’s time to try Linux—because wasting<br/>your life waiting on Windows is so 2000s
             </div>
-            <div className="installLinuxButton cursor-pointer bg-custom_blue h-[7vh] md:w-[10vw] mb-2 mr-3 rounded-2xl flex justify-center items-center text-white text-2xl font-primary">
+            <div className="installLinuxButton cursor-pointer bg-custom_blue h-[7vh] lg:w-[10vw] mb-2 mr-3 rounded-2xl flex justify-center items-center text-white text-2xl font-primary">
               Install Linux
             </div>
           </div>
           <div className="imageContainer">
-            <img src="src/assets/home/weird_bob.png" alt="Hey" className="hidden md:block" />
+            <img src="src/assets/home/weird_bob.png" alt="Hey" className="hidden md:block md:ml-10 md:mt-10 lg:ml-0 lg:mt-0" />
           </div>
         </div>
       </div>
 
-      <div className="h-[10rem] "></div>
+      <div className="h-[5rem] lg:h-[10rem]"></div>
 
       <div className="resourcesBlock flex flex-col p-15 items-center">
-        <div className="exploreTitle self-start bg-custom_orange h-[11vh] md:h-[7vh] p-2 md:p-0 md:w-[18vw] rounded-sm left-[10rem] flex items-center justify-center text-3xl font-semibold  mb-5 ">
+        <div className="title self-start text-center">
           Resources for Noobies
         </div>
-        <div className="blueBox bg-custom_blue rounded-3xl h-[70vh] w-[80vw] md:h-[25vh] md:w-[60vw] p-10 flex flex-col md:flex-row justify-between">
+        <div className="blueBox bg-custom_blue rounded-3xl h-[70vh] w-[80vw] md:h-[20vh] lg:h-[25vh] lg:w-[60vw] p-10 flex flex-col md:flex-row justify-between md:gap-5 lg:gap-0">
           <div className="textbox1 flex flex-col justify-center text-left">
             <div className="mb-2 text-white font-primary text-2xl">
               How to install Linux (With guides)
@@ -88,7 +89,7 @@ function App() {  return (
             </div>
             </Link>
           </div>
-          <div className="whiteLine bg-white h-[2px] md:h-0 md:w-[2px]"></div>
+          <div className="whiteLine bg-white h-[2px] md:h-auto md:w-[2px]"></div>
           <div className="textbox2 flex flex-col justify-center text-left">
             <div className="mb-2 text-white font-primary text-2xl">
               Beginner Tutorials
@@ -100,7 +101,7 @@ function App() {  return (
             </div>
             </Link>
           </div>
-          <div className="whiteLine bg-white h-[2px] md:h-0 md:w-[2px]"></div>
+          <div className="whiteLine bg-white h-[2px] md:h-auto md:w-[2px]"></div>
           <div className="textbox3 flex flex-col justify-center text-left">
             <div className="mb-2 text-white font-primary text-2xl">
               Recommended Softwares
@@ -118,12 +119,12 @@ function App() {  return (
       <div className="h-[5rem] "/>
 
       <div className="testimonialsBlock flex flex-col p-15 items-center">
-        <div className="exploreTitle md:self-start bg-custom_orange h-[7vh] w-[50vw] md:w-[18vw] rounded-sm flex items-center justify-center text-3xl font-semibold  mb-5 ">
+        <div className="title self-start">
             Testimonials
           </div>
         <UserTestimonials/>
       </div>
-      <div className="h-[10rem] "></div>
+      <div className="h-[5rem] hidden md:block"></div>
     </div>
   );
 }
