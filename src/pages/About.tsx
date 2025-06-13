@@ -3,7 +3,7 @@ const AboutPage=()=>{
         <>
             <div className="h-[5rem]"></div>
             <div className="hidden md:flex justify-center">
-                <div className="MainBox bg-gray-100 w-[80vw] md:h-[25vh] md:w-[60vw] p-4 text-center rounded-lg text-2xl font-primary font-semibold">
+                <div className="MainBox bg-gray-100 w-[80vw] md:h-[25vh] md:w-[85vw] lg:w-[60vw] p-4 text-center rounded-lg text-2xl font-primary font-semibold">
                     The GNU/Linux Users Group of NIT Calicut (GLUG NITC) is a student-run community that advocates for the use and understanding of Free and Open Source Software (FOSS). Founded with the belief that software should be accessible, transparent, and collaborative, GLUG NITC provides a platform for students to explore, contribute to, and create open-source tools and knowledge. We see technology not just as a utility, but as a space for exploration, freedom, and shared growth.
                 </div>
             </div>
@@ -11,7 +11,7 @@ const AboutPage=()=>{
 
             <div className="md:flex justify-center">
                 <div className="grid grid-cols-1 p-3 md:p-0 md:ml-0 gap-7 md:grid-cols-2 ">
-                    <div className="bg-custom_blue min-h-[35vh] md:w-[20vw] text-white md:mr-10 rounded-2xl p-3 md:p-5">
+                    <div className="bg-custom_blue min-h-[35vh] md:min-h-[25vh] lg:min-h-[35vh] md:w-[40vw] lg:w-[20vw] text-white md:mr-10 rounded-2xl p-3 md:p-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             Our Philosophy
                         </div>
@@ -20,7 +20,7 @@ const AboutPage=()=>{
                         </div>
                     </div>
 
-                    <div className="bg-gray-100 min-h-[35vh] md:w-[20vw] md:mr-10 rounded-2xl p-3 md:p-5 md:mt-5">
+                    <div className="bg-gray-100 min-h-[35vh] md:min-h-[25vh] lg:min-h-[35vh] md:w-[40vw] lg:w-[20vw] rounded-2xl p-3 md:p-5 md:mt-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             What We Do
                         </div>
@@ -29,7 +29,7 @@ const AboutPage=()=>{
                         </div>
                     </div>
                     
-                    <div className="bg-gray-100 min-h-[35vh] md:w-[20vw] md:mr-10 rounded-2xl p-3 md:p-5">
+                    <div className="bg-gray-100 min-h-[35vh] md:min-h-[25vh] lg:min-h-[35vh] md:w-[40vw] lg:w-[20vw] md:mr-10 rounded-2xl p-3 md:p-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             How We Learn
                         </div>
@@ -38,7 +38,7 @@ const AboutPage=()=>{
                         </div>
                     </div>
 
-                    <div className="bg-custom_blue min-h-[35vh] md:w-[20vw] text-white md:mr-10 rounded-2xl p-3 md:p-5 md:mt-5">
+                    <div className="bg-custom_blue min-h-[35vh] md:min-h-[25vh] lg:min-h-[35vh] md:w-[40vw] lg:w-[20vw] text-white rounded-2xl p-3 md:p-5 md:mt-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             Community Structure
                         </div>
@@ -47,7 +47,7 @@ const AboutPage=()=>{
                         </div>
                     </div>
 
-                    <div className="bg-custom_blue min-h-[35vh] md:w-[20vw] text-white md:mr-10 rounded-2xl p-3 md:p-5">
+                    <div className="bg-custom_blue min-h-[35vh] md:min-h-[25vh] lg:min-h-[35vh] md:w-[40vw] lg:w-[20vw] text-white md:mr-10 rounded-2xl p-3 md:p-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             Beyond Campus
                         </div>
@@ -56,7 +56,7 @@ const AboutPage=()=>{
                         </div>
                     </div>
 
-                    <div className="bg-gray-100 min-h-[35vh] md:w-[20vw] md:mr-10 rounded-2xl p-3 md:p-5 md:mt-5">
+                    <div className="bg-gray-100 min-h-[35vh] md:min-h-[25vh] lg:min-h-[35vh] md:w-[40vw] lg:w-[20vw] rounded-2xl p-3 md:p-5 md:mt-5">
                         <div className="text-2xl font-semibold text-center mb-10">
                             Our History
                         </div>
