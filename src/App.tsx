@@ -11,7 +11,7 @@ function App() {  return (
 
       <div className="titleBlock">
         <div className="text-white text-5xl md:text-[4rem] lg:text-7xl mt-5 md:mt-0 px-1 md:px-3 lg:px-0 font-primary text-center font-semibold">May The Foss Be With You</div>
-        <div className="body md:flex md:justify-between">
+        <div className="body flex flex-col-reverse gap-2 mt-5 md:mt-0 md:gap-0 items-center md:flex-row md:justify-between">
           <div className="msg p-2 md:p-10 lg:p-20 lg:pl-52 flex flex-col items-center md:items-start">
             <div className="subtitle text-white text-4xl md:text-5xl lg:text-7xl/snug font-semibold p-4 md:text-left text-center">
               <h1>Welcome to<br/> Glug NITC!</h1>
@@ -20,10 +20,10 @@ function App() {  return (
               We’re the GNU/Linux Users Group of NIT Calicut. From kernel to code, we dive deep into the world of FOSS, create impactful projects, and push the boundaries of what’s possible with linux and beyond.
             </div>
           </div>
-          <div className="imgContainer relative hidden md:block">
-            <img src="src/assets/home/bg_for_lux.png" alt="" className="md:h-[30vh] lg:h-[60vh] m-20 lg:mr-40 md:w-[40vw] lg:w-auto lg:object-cover"/>
-            <div className="bg-[#ffffff]/40 md:h-[30vh] lg:h-[60vh] md:w-[40vw] lg:w-[37vw] absolute top-[5rem] left-[5rem] rounded-2xl"></div>
-            <img src="src/assets/home/GLUG-logo_without_bg.png" alt="lux" className="absolute hidden md:block md:h-[30vh] lg:h-[60vh] md:top-[7rem] md:left-[5.5rem] lg:top-[6rem] lg:left-[10rem]" />
+          <div className="imgContainer relative">
+            <img src="src/assets/home/bg_for_lux.png" alt="" className="h-[30vh] lg:h-[60vh] md:m-20 lg:mr-40 md:w-[40vw] lg:w-auto lg:object-cover"/>
+            <div className="bg-[#ffffff]/40 h-[30vh] lg:h-[60vh] w-[83vw] md:w-[40vw] lg:w-[37vw] absolute top-0 md:top-[5rem] left-0 md:left-[5rem] rounded-2xl"></div>
+            <img src="src/assets/home/GLUG-logo_without_bg.png" alt="lux" className="absolute md:block h-[30vh] md:h-[30vh] lg:h-[60vh] top-[1rem] md:top-[7rem] lg:top-[6rem] left-[2.5rem] md:left-[5.5rem] lg:left-[10rem]" />
           </div>
         </div>
       </div>
