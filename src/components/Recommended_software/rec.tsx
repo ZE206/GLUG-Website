@@ -1,25 +1,25 @@
 import '../../App.css'
 import Footer from '../Footer';
 
-function terminalcode(str:string, str1:string = "",isgreentext:boolean = false){
-    if(isgreentext){
-        return (
-            <div className='bg rounded-lg text-sm md:text-lg text-white font-mono'>
-                <span>nmcli dev wifi list</span><span>ncmli dev  wifi connect <span className='text-green-500'>"Your network"</span> password <span className='text-green-500'>"Your password"</span></span>
-            </div>
-        )
-    }
+function terminalcode(str: string, str1: string = "", isgreentext: boolean = false) {
+  if (isgreentext) {
     return (
-        <div className='bg p-3 flex justify-between rounded-lg text-sm md:text-lg text-white font-mono'>
-            <span className='text-white'>{str}</span>
-            <span className='text-gray-500 text-sm ml-2'>{str1}</span>
-        </div>
+      <div className='bg rounded-lg text-sm md:text-lg text-white font-mono'>
+        <span>nmcli dev wifi list</span><span>ncmli dev  wifi connect <span className='text-green-500'>"Your network"</span> password <span className='text-green-500'>"Your password"</span></span>
+      </div>
     )
+  }
+  return (
+    <div className='bg p-3 flex justify-between rounded-lg text-sm md:text-lg text-white font-mono'>
+      <span className='text-white'>{str}</span>
+      <span className='text-gray-500 text-sm ml-2'>{str1}</span>
+    </div>
+  )
 }
 
 function RecommendedSoftware() {
 
-     const sections = [
+  const sections = [
     {
       id: "1",
       title: "📝Text Editor",
@@ -93,17 +93,17 @@ function RecommendedSoftware() {
 
   return (
     <div className="bg-[#121212] text-white font-mono text-lg p-6 flex flex-col gap-20 h-full">
-      <div className='flex flex-col items-center gap-5 text-xs md:text-3xl'>
+      <div className='flex flex-col items-center gap-5 text-xs md:text-2xl'>
         <h1 className='text-4xl font-black'>Recommended Softwares for new glugies</h1>
         <p className='font-normal'>This page features essential free and open-source software that can enhance your Linux experience. All tools listed here are beginner-friendly and useful for daily use, development, or learning more about your system.</p>
       </div>
-      <div className="w-full flex flex-col items-center gap-7 text-xs md:text-3xl">
+      <div className="w-full flex flex-col items-center gap-7 text-xs md:text-2xl">
         {sections.map((section) => (
           <div key={section.id} className="p-4 container flex rounded-2xl gap-3 flex-col">
-            <div className="bg-orange-500 text-black px-3 py-5 text-base font-bold md:text-3xl w-1/2  h-full flex self-center justify-center rounded">
+            <div className="bg-orange-500 text-black px-3 py-5 text-base font-bold md:text-2xl w-1/2  h-full flex self-center justify-center rounded">
               {section.id}. {section.title}
             </div>
-            <h2 className="text-5xl font-bold text-white">{section.name}</h2>
+            <h2 className="text-2xl font-bold text-white">{section.name}</h2>
             <p className="text-gray-300">{section.description}</p>
             <div className="rounded-2xl p-3 flex flex-col bg-[#121212]">
               {section.commands.map((cmd, index) => (
@@ -116,7 +116,7 @@ function RecommendedSoftware() {
 
             {section.note && (
               <div className="mt-4 space-y-2 rounded-2xl ">
-                <h3 className="text-4xl font-bold text-white">{section.note}</h3>
+                <h3 className="text-xl font-bold text-white">{section.note}</h3>
                 <p className="text-gray-300">{section.noteDescription}</p>
                 <div className="flex items-center space-x-4 bg-[#121212] rounded-2xl p-3">
                   <span className=" font-bold">{section.noteCommand}</span>
