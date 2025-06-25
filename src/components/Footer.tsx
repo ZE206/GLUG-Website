@@ -16,7 +16,7 @@ const Footer=()=>{
             <Link to="/projects" className="underline">
                 Projects
             </Link>
-            <Link to="/linux-guide" className="underline">
+            <Link to="/linux-installation-guide" className="underline">
               Linux Installation guide
             </Link>
             </div>
