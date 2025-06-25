@@ -5,7 +5,7 @@ const ContributorCard = (item: any) => (
         <div className="flex h-full">
             <img
                 src={item.img}
-                className="mr-4 self-start"
+                className="mr-4 self-start rounded-lg"
                 alt={`${item.name}-photo`}
                 width={"90px"}
             />
@@ -60,7 +60,19 @@ const Contributors = () => {
                 "https://wiki.fosscell.org/index.php?title=User:Akhil_T",
         },
         {
-            name: "John Smith",
+            name: "Aadil krishna",
+            position: "CEO and Founder",
+            img: "src/assets/dummy-photo.svg",
+            linkedIn_link: "",
+        },
+        {
+            name: "Amal Faris",
+            position: "CEO and Founder",
+            img: "src/assets/dummy-photo.svg",
+            linkedIn_link: "",
+        },
+        {
+            name: "Adidev JJ",
             position: "CEO and Founder",
             img: "src/assets/dummy-photo.svg",
             linkedIn_link: "",

@@ -33,19 +33,19 @@ function Navbar() {
         setSidebarOpen(!sidebarOpen);
     };
     return (
-        <nav className="font-primary w-full flex justify-between items-center px-4 sm:px-6 lg:px-8 py-1">
+        <nav className="font-primary w-full flex justify-between items-center px-4 sm:px-8 lg:px-14 py-1">
             <Link
                 to="/"
-                className="text-white text-2xl sm:text-3xl font-bold flex justify-center items-center text-wrap"
+                className="text-white  font-bold flex justify-center items-center text-wrap"
             >
                 <img
                     src={logo}
                     alt="main-navbar-logo"
-                    height={100}
-                    width={100}
-                    className="object-cover m-2 sm:m-4 w-[80px] sm:w-[100px]"
+                    height={110}
+                    width={110}
+                    className="object-cover m-2 my-4 sm:m-4 w-[90px] sm:w-[110px]"
                 />
-                <div className="flex flex-col">
+                <div className="flex flex-col text-3xl sm:text-3xl">
                     <span>GLUG</span>
                     <span>NITC</span>
                 </div>
