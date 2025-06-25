@@ -22,7 +22,7 @@ function terminalcode(str: string, str1: string = "", isgreentext: boolean = fal
 }
 function Beginner() {
     return (
-        <div className='flex font-primary bg w-full gap-5 flex-col items-center text-white px-3 '>
+        <div className='flex font-primary bg w-full gap-10 flex-col items-center text-white px-3 '>
             <div className=' flex text-xl md:text-2xl flex-col gap-10 items-center justify-around w-full'>
                 <div className='w-full flex flex-col container py-7 px-7 rounded-3xl items-center gap-5'>
                     {titleCase("Getting Started With Linux")}

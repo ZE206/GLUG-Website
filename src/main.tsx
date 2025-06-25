@@ -22,11 +22,10 @@ const router = createBrowserRouter([
         children: [
             { index: true, element: <App /> },
             { path: "about", element:<AboutPage/> },
-            { path: "contact", element: <div>Contact Page</div> },
             { path: "/recommended-software", element: <RecommendedSoftware /> },
             { path: "/opensource-projects", element: <OpensourceProj /> },
             { path: "/beginner-tutorials", element: <Beginner /> },
-            { path: "/linux-installation-guide", element: <LIG />},
+            { path: "/linux-guide", element: <LIG />},
             { path: "*", element: <NotFound /> },
         ],
     },
