@@ -17,7 +17,7 @@ const ContributorCard = (item: any) => (
                 </div> */}
                 <Link to={item.linkedIn_link} >
                     <img
-                        src="src/assets/Nitc-wiki.svg"
+                        src="public/Nitc-wiki.svg"
                         alt="linkedIn-icon"
                         width={"45px"}
                         className="ml-auto mb-auto translate-x-2 -translate-y-2"
@@ -35,7 +35,7 @@ const Contributors = () => {
         {
             name: "Vysakh Sheeja Premkumar",
             position: "CEO and Founder",
-            img: "src/assets/dummy-photo.svg",
+            img: "public/dummy-photo.svg",
             linkedIn_link:
                 "https://wiki.fosscell.org/index.php?title=User:Vysakh",
         },
@@ -49,32 +49,32 @@ const Contributors = () => {
         {
             name: "Rehan Tadpatri",
             position: "CEO and Founder",
-            img: "src/assets/dummy-photo.svg",
+            img: "public/dummy-photo.svg",
             linkedIn_link: "https://github.com/astroanax",
         },
         {
             name: "Akhil T",
             position: "CEO and Founder",
-            img: "src/assets/dummy-photo.svg",
+            img: "public/dummy-photo.svg",
             linkedIn_link:
                 "https://wiki.fosscell.org/index.php?title=User:Akhil_T",
         },
         {
             name: "Aadil krishna",
             position: "CEO and Founder",
-            img: "src/assets/dummy-photo.svg",
+            img: "public/dummy-photo.svg",
             linkedIn_link: "",
         },
         {
             name: "Amal Faris",
             position: "CEO and Founder",
-            img: "src/assets/dummy-photo.svg",
+            img: "public/dummy-photo.svg",
             linkedIn_link: "",
         },
         {
             name: "Adidev JJ",
             position: "CEO and Founder",
-            img: "src/assets/dummy-photo.svg",
+            img: "public/dummy-photo.svg",
             linkedIn_link: "",
         },
     ];
@@ -83,7 +83,7 @@ const Contributors = () => {
         <Carousel
             items={contributors_details}
             renderItem={ContributorCard}
-            // maxVisible={5}
+        // maxVisible={5}
         />
     );
 };

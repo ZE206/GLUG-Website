@@ -14,7 +14,7 @@ function Card(item: any) {
             ></iframe>{" "}
             <div className="flex items-center gap-3 sm:gap-4">
                 <img
-                    src="src/assets/internet 2.svg"
+                    src="public/internet 2.svg"
                     alt="internet-icon"
                     className="w-6 sm:w-auto"
                 />
@@ -27,7 +27,7 @@ function Card(item: any) {
             </div>{" "}
             <div className="flex items-center gap-3 sm:gap-4 mt-3 sm:mt-4">
                 <img
-                    src="src/assets/inss 2.svg"
+                    src="public/inss 2.svg"
                     alt="settings0-icon"
                     className="w-6 scale-120 sm:w-auto sm:scale-100"
                 />

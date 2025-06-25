@@ -59,32 +59,32 @@ const OpensourceProj = () => {
                 </h2>
                 <Card
                     text="Meet our NITC wiki. Browse through our extensive collection of NITC info. Maybe download the app to be up to date, or go on to contribute your fantastic ideas!"
-                    img="src/assets/Nitc-wiki.svg"
+                    img="public/Nitc-wiki.svg"
                     alt="NITC-Wiki"
                     siteUrl="https://wiki.fosscell.org"
                     repoUrl="https://gitlab.com/wiki-nitc/nitc-wiki-android-app"
                 />
                 <Card
                     text="Race on a replica racetrack of our campus. Specially designed for FOSSMEET 25. Explore how we did it !"
-                    img="src/assets/fossmeet25-race-track.svg"
+                    img="public/fossmeet25-race-track.svg"
                     alt="FOSS-MEET-25"
                     repoUrl="https://github.com/DuffyYT/KSRTC-NITC-tuxKart"
                 />
                 <Card
                     text="Want to ask fellow NITC students about their lifestyle, workflow and skills, or just have some basic doubts? Visit Ask NITC"
-                    img="src/assets/Ask NITC.svg"
+                    img="public/Ask NITC.svg"
                     alt="Ask NITC"
                     siteUrl="https://ask.kenobi.win"
                 />
                 <Card
                     text='A python "daemon"/CLI that tries to keep you logged into the NITC. It will automatically log you in from the next reboot/shutdown'
-                    img="src/assets/nitc-fwd.png"
+                    img="public/nitc-fwd.png"
                     alt="NITC-Login-Daemon"
                     repoUrl="https://github.com/astroanax/nitc-fwd"
                 />
                 <Card
                     text="A Django application to record the entry and exit of students into the library by scanning their ID cards using an RFID reader."
-                    img="src/assets/entry-exit-dl.png"
+                    img="public/entry-exit-dl.png"
                     alt="Entry-Exit-DL"
                     repoUrl="https://github.com/AfthabEK/Entry-Exit-DL"
                 />

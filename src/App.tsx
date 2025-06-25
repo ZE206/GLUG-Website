@@ -5,7 +5,8 @@ import UserTestimonials from "./components/User_Testimonials";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 
-function App() {  return (
+function App() {
+  return (
     <div className="w-full bg-[#121212]">
       <div className="h-[2rem] md:h-[3rem]"></div>
 
@@ -14,14 +15,14 @@ function App() {  return (
         <div className="body flex flex-col-reverse gap-2 mt-5 md:mt-0 md:gap-0 items-center md:flex-row md:justify-between">
           <div className="msg p-2 md:p-10 lg:p-20 lg:pl-[10vw] flex flex-col items-center md:items-start">
             <div className="subtitle text-white text-4xl md:text-5xl lg:text-7xl/snug font-semibold p-4 md:text-left text-center">
-              <h1>Welcome to<br/> Glug NITC!</h1>
+              <h1>Welcome to<br /> Glug NITC!</h1>
             </div>
             <div className="subbody mt-2 text-2xl font-primary md:text-left text-center text-[rgba(170,170,170,0.666)] md:ml-4 w-[80vw] md:w-[30vw]">
               We’re the GNU/Linux Users Group of NIT Calicut. From kernel to code, we dive deep into the world of FOSS, create impactful projects, and push the boundaries of what’s possible with linux and beyond.
             </div>
           </div>
           <div className="imgContainer relative">
-            <img src="src/assets/home/hero_image.png" alt="" className="h-auto md:mr-[5vw] lg:mr-40 w-[80vw] md:w-[50vw] lg:w-auto object-cover rounded-md"/>
+            <img src="public/hero_image.png" alt="" className="h-auto md:mr-[5vw] lg:mr-40 w-[80vw] md:w-[50vw] lg:w-auto object-cover rounded-md" />
           </div>
         </div>
       </div>
@@ -44,12 +45,12 @@ function App() {  return (
             </div>
             <Link to="/projects">
               <div className="LearnMore flex">
-                <FaCircleArrowRight className="rotate-315 text-4xl mr-3"/>
+                <FaCircleArrowRight className="rotate-315 text-4xl mr-3" />
                 Learn More
               </div>
             </Link>
           </div>
-          <img src="src/assets/home/browser_click.png" alt="image" className="h-[20vh] hidden md:block" />
+          <img src="public/browser_click.png" alt="image" className="h-[20vh] hidden md:block" />
         </div>
       </div>
 
@@ -57,14 +58,14 @@ function App() {  return (
         <div className="greyBox bg-gray-200 rounded-3xl p-5 md:p-10 flex">
           <div className="textBox flex flex-col justify-around">
             <div className="textContent text-2xl md:text-xl lg:text-2xl mb-4 md:mb-0">
-            Tired of your computer begging for updates<br/>every five minutes and crashing like it’s 1999?<br/>Maybe it’s time to try Linux—because wasting<br/>your life waiting on Windows is so 2000s
+              Tired of your computer begging for updates<br />every five minutes and crashing like it’s 1999?<br />Maybe it’s time to try Linux—because wasting<br />your life waiting on Windows is so 2000s
             </div>
             <div className="installLinuxButton cursor-pointer bg-custom_blue h-[7vh] lg:w-[15vw] mb-2 mr-3 rounded-2xl flex justify-center items-center text-white text-2xl font-primary">
               Install Linux
             </div>
           </div>
           <div className="imageContainer">
-            <img src="src/assets/home/weird_bob.png" alt="Hey" className="hidden md:block md:ml-10 md:mt-10 lg:ml-0 lg:mt-0" />
+            <img src="public/weird_bob.png" alt="Hey" className="hidden md:block md:ml-10 md:mt-10 lg:ml-0 lg:mt-0" />
           </div>
         </div>
       </div>
@@ -81,10 +82,10 @@ function App() {  return (
               How to install Linux (With guides)
             </div>
             <Link to="/linux-guide">
-            <div className="learnMore text-xl text-custom_orange flex items-center">
-              Learn More 
-              <FaArrowRight className="ml-2 rotate-315"/>
-            </div>
+              <div className="learnMore text-xl text-custom_orange flex items-center">
+                Learn More
+                <FaArrowRight className="ml-2 rotate-315" />
+              </div>
             </Link>
           </div>
           <div className="whiteLine bg-white h-[2px] md:h-auto md:w-[2px]"></div>
@@ -93,10 +94,10 @@ function App() {  return (
               Beginner Tutorials
             </div>
             <Link to="/beginner-tutorials">
-            <div className="learnMore text-xl text-custom_orange flex items-center">
-              Learn More
-              <FaArrowRight className="ml-2 rotate-315"/>
-            </div>
+              <div className="learnMore text-xl text-custom_orange flex items-center">
+                Learn More
+                <FaArrowRight className="ml-2 rotate-315" />
+              </div>
             </Link>
           </div>
           <div className="whiteLine bg-white h-[2px] md:h-auto md:w-[2px]"></div>
@@ -105,22 +106,22 @@ function App() {  return (
               Recommended Softwares
             </div>
             <Link to="/recommended-software">
-            <div className="learnMore text-xl text-custom_orange flex items-center">
-              Learn More
-              <FaArrowRight className="ml-2 rotate-315"/>
-            </div>
+              <div className="learnMore text-xl text-custom_orange flex items-center">
+                Learn More
+                <FaArrowRight className="ml-2 rotate-315" />
+              </div>
             </Link>
           </div>
         </div>
       </div>
-      
-      <div className="h-[5rem] "/>
+
+      <div className="h-[5rem] " />
 
       <div className="testimonialsBlock flex flex-col p-15 items-center">
         <div className="title self-start">
-            Testimonials
-          </div>
-        <UserTestimonials/>
+          Testimonials
+        </div>
+        <UserTestimonials />
       </div>
       <div className="h-[5rem] hidden md:block"></div>
     </div>
