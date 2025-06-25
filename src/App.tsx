@@ -22,7 +22,7 @@ function App() {
             </div>
           </div>
           <div className="imgContainer relative">
-            <img src="public/hero_image.png" alt="" className="h-auto md:mr-[5vw] lg:mr-40 w-[80vw] md:w-[50vw] lg:w-auto object-cover rounded-md" />
+            <img src="/hero_image.png" alt="" className="h-auto md:mr-[5vw] lg:mr-40 w-[80vw] md:w-[50vw] lg:w-auto object-cover rounded-md" />
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ function App() {
               </div>
             </Link>
           </div>
-          <img src="public/browser_click.png" alt="image" className="h-[20vh] hidden md:block" />
+          <img src="/browser_click.png" alt="image" className="h-[20vh] hidden md:block" />
         </div>
       </div>
 
@@ -65,7 +65,7 @@ function App() {
             </div>
           </div>
           <div className="imageContainer">
-            <img src="public/weird_bob.png" alt="Hey" className="hidden md:block md:ml-10 md:mt-10 lg:ml-0 lg:mt-0" />
+            <img src="/weird_bob.png" alt="Hey" className="hidden md:block md:ml-10 md:mt-10 lg:ml-0 lg:mt-0" />
           </div>
         </div>
       </div>
