@@ -1,28 +1,14 @@
 import '../../App.css'
 import Footer from '../Footer';
 
-function terminalcode(str: string, str1: string = "", isgreentext: boolean = false) {
-  if (isgreentext) {
-    return (
-      <div className='bg rounded-lg text-sm md:text-lg text-white font-mono'>
-        <span>nmcli dev wifi list</span><span>ncmli dev  wifi connect <span className='text-green-500'>"Your network"</span> password <span className='text-green-500'>"Your password"</span></span>
-      </div>
-    )
-  }
-  return (
-    <div className='bg p-3 flex justify-between rounded-lg text-sm md:text-lg text-white font-mono'>
-      <span className='text-white'>{str}</span>
-      <span className='text-gray-500 text-sm ml-2'>{str1}</span>
-    </div>
-  )
-}
+
 
 function RecommendedSoftware() {
 
   const sections = [
     {
       id: "1",
-      title: "📝Text Editor",
+      title: "Text Editor",
       name: "Gedit",
       description:
         "Default text editor for GNOME desktop. Usually pre-installed on most GNOME-based Linux distributions. If not installed, use your package manager.",
@@ -36,7 +22,7 @@ function RecommendedSoftware() {
     },
     {
       id: "2",
-      title: "🌐Web Browser",
+      title: "Web Browser",
       name: "Firefox",
       description:
         "Default web browser in many Linux distributions (like Ubuntu, Debian, Fedora). Usually pre-installed. If not, you can install using:",
@@ -47,7 +33,7 @@ function RecommendedSoftware() {
     },
     {
       id: "3",
-      title: "🎞️Media Players and Editors",
+      title: "Media Players and Editors",
       name: "VLC (VideoLAN Client) Media Player",
       description:
         "Versatile media player that supports a wide variety of audio and video formats. Often pre-installed, but:",
@@ -58,7 +44,7 @@ function RecommendedSoftware() {
     },
     {
       id: "4",
-      title: "📁Office & Productivity",
+      title: "Office & Productivity",
       name: "LibreOffice",
       description:
         "Full-featured, open-source office suite — a powerful alternative to Microsoft Office. Usually pre-installed on many Linux distributions. If not, you can install it with:",
@@ -69,7 +55,7 @@ function RecommendedSoftware() {
     },
     {
       id: "5",
-      title: " 🔧System Utilities",
+      title: " System Utilities",
       name: "GParted",
       description:
         "GParted is a tool used to manage your hard drive or USB drive. Usually pre-installed but can be installed with:",
@@ -80,7 +66,7 @@ function RecommendedSoftware() {
     },
     {
       id: "6",
-      title: "🧪Development Tools",
+      title: "Development Tools",
       name: "Git",
       description:
         "Git is a free and open-source version control system. It helps you track changes in your code and collaborate with others. Whether you're working on personal projects or with a team, Git keeps your project organized and safe. Usually not preinstalled and can be installed using:",
@@ -100,7 +86,7 @@ function RecommendedSoftware() {
       <div className="w-full flex flex-col items-center gap-7 text-xs md:text-2xl">
         {sections.map((section) => (
           <div key={section.id} className="p-4 container flex rounded-2xl gap-3 flex-col">
-            <div className="bg-orange-500 text-black px-3 py-5 text-base font-bold md:text-2xl w-1/2  h-full flex self-center justify-center rounded">
+            <div className="title text-black self-center">
               {section.id}. {section.title}
             </div>
             <h2 className="text-2xl font-bold text-white">{section.name}</h2>
