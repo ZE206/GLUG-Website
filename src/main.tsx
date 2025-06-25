@@ -10,8 +10,10 @@ import OpensourceProj from "./components/Opensource-projects/Opensource-projects
 import Beginner from "./components/Beginner_tut/beg.tsx";
 import LIG from "./components/LinuxInstallationGuide/LIG.tsx";
 const NotFound = () => (
-    <div className="text-white absolute top-[50%] left-[50%] text-8xl font-bold -translate-1/2 text-nowrap">
-        404 - Page Not Found
+    <div className="min-h-screen flex items-center justify-center">
+        <span className="text-white text-center text-6xl md:text-8xl font-bold lg:text-nowrap -translate-y-24">
+            404 - Page Not Found
+        </span>
     </div>
 );
 
@@ -22,10 +24,11 @@ const router = createBrowserRouter([
         children: [
             { index: true, element: <App /> },
             { path: "about", element:<AboutPage/> },
+            { path: "contact", element: <div>Contact Page</div> },
             { path: "/recommended-software", element: <RecommendedSoftware /> },
             { path: "/opensource-projects", element: <OpensourceProj /> },
             { path: "/beginner-tutorials", element: <Beginner /> },
-            { path: "/linux-guide", element: <LIG />},
+            { path: "/linux-installation-guide", element: <LIG />},
             { path: "*", element: <NotFound /> },
         ],
     },
