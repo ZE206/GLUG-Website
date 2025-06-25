@@ -86,7 +86,7 @@ function RecommendedSoftware() {
       <div className="w-full flex flex-col items-center gap-7 text-xs md:text-2xl">
         {sections.map((section) => (
           <div key={section.id} className="p-4 container flex rounded-2xl gap-3 flex-col">
-            <div className="title text-black self-center">
+            <div className="title text-black self-center text-wrap text-center text-xl md:text-4xl">
               {section.id}. {section.title}
             </div>
             <h2 className="text-2xl font-bold text-white">{section.name}</h2>
