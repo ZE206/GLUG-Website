@@ -75,9 +75,9 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                     <Link
-                        to="/projects"
+                        to="/opensource-projects"
                         className={`nav-links  ${
-                            location.pathname.startsWith("/projects")
+                            location.pathname.startsWith("/opensource-projects")
                                 ? "nav-link-selected"
                                 : ""
                         }`}
@@ -115,7 +115,7 @@ function Navbar() {
                 ref={sidebarRef}
                 className={`${
                     sidebarOpen ? "block" : "hidden"
-                } fixed right-8 top-24 rounded-2xl w-72 bg-[#0000004D] backdrop-blur-md text-white p-6 z-50`}
+                } fixed right-8 top-20 sm:top-24 rounded-2xl w-72 bg-[#0000004D] backdrop-blur-md text-white p-6 z-50`}
             >
                 {" "}
                 <ul className="flex flex-col w-full gap-4">
@@ -145,9 +145,9 @@ function Navbar() {
                     </li>{" "}
                     <li className="nav-item w-full text-right">
                         <Link
-                            to="/projects"
+                            to="/opensource-projects"
                             className={`nav-links text-lg inline-block ${
-                                location.pathname.startsWith("/projects")
+                                location.pathname.startsWith("/opensource-projects")
                                     ? "nav-link-selected"
                                     : ""
                             }`}

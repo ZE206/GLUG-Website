@@ -22,25 +22,29 @@ function Card(props: {
                     {props.text}
                 </p>
                 <div className="flex justify-center lg:justify-start flex-wrap gap-3 lg:gap-4">
-                    <a
-                        href={props.siteUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <button className="bg-[#191A23] text-white text-md lg:text-base px-5 lg:px-6 py-3 lg:py-4 rounded-xl">
-                            Visit site
-                        </button>
-                    </a>
+                    {props.siteUrl && (
+                        <a
+                            href={props.siteUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button className="bg-[#191A23] text-white text-md lg:text-base px-5 lg:px-6 py-3 lg:py-4 rounded-xl">
+                                Visit site
+                            </button>
+                        </a>
+                    )}
 
-                    <a
-                        href={props.repoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <button className="bg-primary text-white text-md lg:text-base px-5 lg:px-6 py-3 lg:py-4 rounded-xl">
-                            Contribute
-                        </button>
-                    </a>
+                    {props.repoUrl && (
+                        <a
+                            href={props.repoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button className="bg-primary text-white text-md lg:text-base px-5 lg:px-6 py-3 lg:py-4 rounded-xl">
+                                Contribute
+                            </button>
+                        </a>
+                    )}
                 </div>
             </div>
         </div>

@@ -104,7 +104,7 @@ const LIG = () => {
                 website_url="https://zorin.com/os/"
                 guide="https://help.zorin.com/docs/getting-started/install-zorin-os/"
                 guide_url="https://help.zorin.com/docs/getting-started/install-zorin-os/"
-                video_url=""
+                video_url="https://www.youtube.com/embed/_zt3znvsz94?si=WkUlFNpxRp3t0qn3"
             />
         </div>
     );
