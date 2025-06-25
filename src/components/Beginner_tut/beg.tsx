@@ -1,9 +1,4 @@
 import '../../App.css'
-import nav from '../../assets/navigation.png';
-import file from '../../assets/filemgmt.png'
-import sys from '../../assets/sysinfohelp.png'
-import inst from '../../assets/install_software.png'
-import ubuntu from '../../assets/ubuntu_install.png';
 
 function titleCase(str: string) {
     return (
