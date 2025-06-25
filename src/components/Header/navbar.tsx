@@ -1,5 +1,5 @@
 "use client";
-import { Link, redirect, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/navbar-logo.svg";
 import "../../App.css";
 import { useState, useRef, useEffect } from "react";
