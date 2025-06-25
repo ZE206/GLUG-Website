@@ -101,7 +101,7 @@ function Navbar() {
             </ul>{" "}
             {/* responsive part */}{" "}
             <img
-                src="src/assets/navOpt.svg"
+                src="navOpt.svg"
                 alt="nav-options"
                 className="block md:hidden cursor-pointer"
                 onClick={toggleSidebar}
