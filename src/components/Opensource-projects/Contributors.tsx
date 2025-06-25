@@ -1,4 +1,3 @@
-import React from "react";
 import Carousel from "../common/Carousel";
 import { Link } from "react-router";
 const ContributorCard = (item: any) => (
