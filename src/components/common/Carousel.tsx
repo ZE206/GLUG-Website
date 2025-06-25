@@ -65,7 +65,7 @@ function Carousel<T>({ items, renderItem }: CarouselProps<T>) {
             </div>{" "}
             <div className="arrowBar flex items-center justify-center gap-[15%] mt-8 px-4">
                 <img
-                    src="src/assets/Arrow.png"
+                    src="/Arrow.png"
                     alt="left arrow"
                     className="cursor-pointer rotate-180"
                     onClick={leftArrowClick}
@@ -75,8 +75,8 @@ function Carousel<T>({ items, renderItem }: CarouselProps<T>) {
                         <img
                             src={
                                 i === currentPage
-                                    ? "src/assets/BrightStar.png"
-                                    : "src/assets/WhiteStar.png"
+                                    ? "/BrightStar.png"
+                                    : "/WhiteStar.png"
                             }
                             alt="star"
                             key={i}
@@ -86,7 +86,7 @@ function Carousel<T>({ items, renderItem }: CarouselProps<T>) {
                     ))}
                 </div>
                 <img
-                    src="src/assets/Arrow.png"
+                    src="/Arrow.png"
                     alt="right arrow"
                     className="cursor-pointer"
                     onClick={rightArrowClick}

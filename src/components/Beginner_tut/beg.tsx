@@ -1,19 +1,14 @@
 import '../../App.css'
-import nav from '../../assets/navigation.png';
-import file from '../../assets/filemgmt.png'
-import sys from '../../assets/sysinfohelp.png'
-import inst from '../../assets/install_software.png'
-import ubuntu from '../../assets/ubuntu_install.png';
 
 function titleCase(str: string) {
     return (
-        <div className=' font-extrabold rounded-2xl  flex self-center  items-center justify-center text-2xl bg-orange-400 text-black p-5'>{str}</div>
+        <div className=' title text-black self-center text-wrap text-center'>{str}</div>
     )
 }
 function terminalcode(str: string, str1: string = "", isgreentext: boolean = false) {
     if (isgreentext) {
         return (
-            <div className='bg rounded-lg text-sm md:text-lg text-white font-mono rounded-2xl p-3 flex flex-col bg-[#121212]'>
+            <div className='bg rounded-lg text-sm md:text-lg text-white font-mono p-3 flex flex-col bg-[#121212]'>
                 <span>ncmli dev  wifi connect <span className='text-green-500'>"Your network"</span> password <span className='text-green-500'>"Your password"</span></span>
             </div>
         )
@@ -29,7 +24,7 @@ function Beginner() {
     return (
         <div className='flex font-primary bg w-full gap-5 flex-col items-center text-white px-3 '>
             <div className=' flex text-xl md:text-2xl flex-col gap-10 items-center justify-around w-full'>
-                <div className='w-full flex flex-col container py-5 px-5 rounded-3xl items-center gap-5'>
+                <div className='w-full flex flex-col container py-7 px-7 rounded-3xl items-center gap-5'>
                     {titleCase("Getting Started With Linux")}
                     <div className="whitespace-pre-line flex flex-col gap-10">
                         What is Linux?
@@ -49,7 +44,7 @@ function Beginner() {
                         </ul>
                         <div className=" flex flex-col gap-5 items-start">
                             The 3 methods to run linux in your computers are
-                            <ul className='mx-15'>
+                            <ul>
                                 <li className='flex flex-col gap-2 mx-10'>
                                     <strong className='-mx-10'>a. Live USB:</strong> Run Linux directly from a USB stick.
                                 </li>
@@ -64,7 +59,7 @@ function Beginner() {
                     </div>
 
                 </div>
-                <div className=' flex flex-col container px-5 py-10 rounded-3xl gap-7'>
+                <div className=' flex flex-col container px-7 py-10 rounded-3xl gap-7'>
                     {titleCase("Basic Terminal Commands")}
                     <span>What is the Terminal?</span>
                     <span className='mx-5'>The terminal is a text-based interface that lets you interact with your Linux system directly by typing commands.</span>
@@ -190,6 +185,7 @@ function Beginner() {
                     ))}
                 </div>
                 <div className='flex flex-col container px-10  py-10 rounded-3xl gap-15'>
+                    {titleCase("Network")}
                     <span className='flex flex-col gap-5'>Check ip and network:<div className="rounded-2xl p-3 flex flex-col bg-[#121212]">{terminalcode("ip a", "# Show interfaces and IP's")}{terminalcode("ping google.com ", "#  Check connectivity")}{terminalcode("traceroute glug.org", "# Trace Packet Route")}</div></span>
                     <span className='flex flex-col gap-5'>Connect to Wi-Fi(Network Manager)<div className="rounded-2xl p-3 flex flex-col bg-[#121212]">{terminalcode("nmcli dev wifi list", "")}</div>{terminalcode("", "", true)}</span>
                 </div>

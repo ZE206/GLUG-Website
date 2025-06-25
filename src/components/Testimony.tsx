@@ -6,8 +6,8 @@ interface TestimonyProps {
   author: string;
   total: number;
   currNo: number;
-  onNext: ()=>void;
-  onPrev: ()=>void;
+  onNext: () => void;
+  onPrev: () => void;
 }
 
 const Testimony: React.FC<TestimonyProps> = ({ quote, author, total, currNo, onNext, onPrev }) => {
@@ -35,15 +35,15 @@ const Testimony: React.FC<TestimonyProps> = ({ quote, author, total, currNo, onN
         <div className="arrowBar flex items-center gap-[15vw] md:gap-[25vw] mt-[1rem] md:px-10">
           {/* {currNo==0 && <img src="src/assets/dullArrow.png" alt="left arrow" className="cursor-pointer" />} */}
           {/* {currNo!=0 && <img src="src/assets/Arrow.png" alt="left arrow" className="cursor-pointer rotate-180" onClick={onPrev}/>} */}
-          <img src="src/assets/Arrow.png" alt="left arrow" className="cursor-pointer rotate-180" onClick={onPrev}/>
+          <img src="/Arrow.png" alt="left arrow" className="cursor-pointer rotate-180" onClick={onPrev} />
           <div className="starBar flex w-full">
             {Array.from({ length: currNo }, (_, i) => (
-              <img src="src/assets/WhiteStar.png" alt="star" key={i} className="mr-[1rem] cursor-pointer" />
+              <img src="/WhiteStar.png" alt="star" key={i} className="mr-[1rem] cursor-pointer" />
             ))}
-            <img src="src/assets/BrightStar.png" alt="star" key={currNo} className="mr-[1rem] cursor-pointer" />
+            <img src="/BrightStar.png" alt="star" key={currNo} className="mr-[1rem] cursor-pointer" />
             {Array.from({ length: total - currNo - 1 }, (_, i) => (
               <img
-                src="src/assets/WhiteStar.png"
+                src="/WhiteStar.png"
                 alt="star"
                 key={`star-${i + currNo + 1}`}
                 className="mr-[1rem] cursor-pointer"
@@ -52,7 +52,7 @@ const Testimony: React.FC<TestimonyProps> = ({ quote, author, total, currNo, onN
           </div>
           {/* {currNo==total-1 && <img src="src/assets/dullArrow.png" alt="right arrow" className="cursor-pointer rotate-180" />} */}
           {/* {currNo!=total-1 && <img src="src/assets/Arrow.png" alt="right arrow" className="cursor-pointer" onClick={onNext}/>} */}
-          <img src="src/assets/Arrow.png" alt="right arrow" className="cursor-pointer" onClick={onNext}/>
+          <img src="/Arrow.png" alt="right arrow" className="cursor-pointer" onClick={onNext} />
         </div>
       </div>
     </div>
