@@ -7,7 +7,7 @@ import ubuntu from '../../assets/ubuntu_install.png';
 
 function titleCase(str: string) {
     return (
-        <div className=' title text-black self-center'>{str}</div>
+        <div className=' title text-black self-center text-wrap text-center'>{str}</div>
     )
 }
 function terminalcode(str: string, str1: string = "", isgreentext: boolean = false) {
@@ -49,7 +49,7 @@ function Beginner() {
                         </ul>
                         <div className=" flex flex-col gap-5 items-start">
                             The 3 methods to run linux in your computers are
-                            <ul className='mx-15'>
+                            <ul>
                                 <li className='flex flex-col gap-2 mx-10'>
                                     <strong className='-mx-10'>a. Live USB:</strong> Run Linux directly from a USB stick.
                                 </li>
@@ -190,6 +190,7 @@ function Beginner() {
                     ))}
                 </div>
                 <div className='flex flex-col container px-10  py-10 rounded-3xl gap-15'>
+                    {titleCase("Network")}
                     <span className='flex flex-col gap-5'>Check ip and network:<div className="rounded-2xl p-3 flex flex-col bg-[#121212]">{terminalcode("ip a", "# Show interfaces and IP's")}{terminalcode("ping google.com ", "#  Check connectivity")}{terminalcode("traceroute glug.org", "# Trace Packet Route")}</div></span>
                     <span className='flex flex-col gap-5'>Connect to Wi-Fi(Network Manager)<div className="rounded-2xl p-3 flex flex-col bg-[#121212]">{terminalcode("nmcli dev wifi list", "")}</div>{terminalcode("", "", true)}</span>
                 </div>
