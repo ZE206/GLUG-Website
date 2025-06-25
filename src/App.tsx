@@ -11,8 +11,8 @@ function App() {  return (
 
       <div className="titleBlock">
         <div className="text-white text-5xl md:text-[4rem] lg:text-7xl mt-5 md:mt-0 px-1 md:px-3 lg:px-0 font-primary text-center font-semibold">May The Foss Be With You</div>
-        <div className="body md:flex md:justify-between">
-          <div className="msg p-2 md:p-10 lg:p-20 lg:pl-52 flex flex-col items-center md:items-start">
+        <div className="body flex flex-col-reverse gap-2 mt-5 md:mt-0 md:gap-0 items-center md:flex-row md:justify-between">
+          <div className="msg p-2 md:p-10 lg:p-20 lg:pl-[10vw] flex flex-col items-center md:items-start">
             <div className="subtitle text-white text-4xl md:text-5xl lg:text-7xl/snug font-semibold p-4 md:text-left text-center">
               <h1>Welcome to<br/> Glug NITC!</h1>
             </div>
@@ -20,10 +20,8 @@ function App() {  return (
               We’re the GNU/Linux Users Group of NIT Calicut. From kernel to code, we dive deep into the world of FOSS, create impactful projects, and push the boundaries of what’s possible with linux and beyond.
             </div>
           </div>
-          <div className="imgContainer relative hidden md:block">
-            <img src="src/assets/home/bg_for_lux.png" alt="" className="md:h-[30vh] lg:h-[60vh] m-20 lg:mr-40 md:w-[40vw] lg:w-auto lg:object-cover"/>
-            <div className="bg-[#ffffff]/40 md:h-[30vh] lg:h-[60vh] md:w-[40vw] lg:w-[37vw] absolute top-[5rem] left-[5rem] rounded-2xl"></div>
-            <img src="src/assets/home/GLUG-logo_without_bg.png" alt="lux" className="absolute hidden md:block md:h-[30vh] lg:h-[60vh] md:top-[7rem] md:left-[5.5rem] lg:top-[6rem] lg:left-[10rem]" />
+          <div className="imgContainer relative">
+            <img src="src/assets/home/hero_image.png" alt="" className="h-auto md:mr-[5vw] lg:mr-40 w-[80vw] md:w-[50vw] lg:w-auto object-cover rounded-md"/>
           </div>
         </div>
       </div>
@@ -33,13 +31,13 @@ function App() {  return (
           Explore
         </div>
         <div className="mainServicesBlock bg-custom_orange h-[30vh] md:h-[30vh] lg:h-[40vh] w-[80vw] lg:w-[50vw] rounded-2xl md:flex md:justify-between p-5 md:p-10 text-2xl">
-          <div className="textBox flex flex-col items-center justify-between md:items-start md:p-10">
+          <div className="textBox flex flex-col items-center justify-center md:items-start ">
             <div className="title inset-shadow-sm">
               <div className="openSource flex flex-col items-center justify-between md:block">
-                <div className="line1 bg-white rounded-md h-[5vh] md:h-[4vh] lg:h-[5vh] p-2 w-[65vw] md:w-[27vw] lg:w-[15vw] flex justify-center items-center">
+                <div className="line1 bg-white px-1 rounded-md">
                   Open Source
                 </div>
-                <div className="line2 bg-white rounded-md h-[5vh] md:h-[4vh] lg:h-[5vh] p-2 w-[45vw] md:w-[20vw] lg:w-[11vw] flex justify-center items-center">
+                <div className="line2 bg-white px-1 rounded-md">
                   Projects
                 </div>
               </div>
@@ -55,13 +53,13 @@ function App() {  return (
         </div>
       </div>
 
-      <div className="ctaBlock flex justify-center mt-[5rem] md:mt-[10rem]">
-        <div className="greyBox left-[20rem] bg-gray-200 rounded-3xl md:h-[35vh] lg:h-[50vh] w-[80vw] md:w-[75vw] lg:w-[60vw] p-5 md:p-10 flex md:justify-between lg:justify-around">
-          <div className="textBox flex flex-col justify-between ">
+      <div className="ctaBlock flex justify-center p-3 mt-[5rem] md:mt-[10rem]">
+        <div className="greyBox bg-gray-200 rounded-3xl p-5 md:p-10 flex">
+          <div className="textBox flex flex-col justify-around">
             <div className="textContent text-2xl md:text-xl lg:text-2xl mb-4 md:mb-0">
             Tired of your computer begging for updates<br/>every five minutes and crashing like it’s 1999?<br/>Maybe it’s time to try Linux—because wasting<br/>your life waiting on Windows is so 2000s
             </div>
-            <div className="installLinuxButton cursor-pointer bg-custom_blue h-[7vh] lg:w-[10vw] mb-2 mr-3 rounded-2xl flex justify-center items-center text-white text-2xl font-primary">
+            <div className="installLinuxButton cursor-pointer bg-custom_blue h-[7vh] lg:w-[15vw] mb-2 mr-3 rounded-2xl flex justify-center items-center text-white text-2xl font-primary">
               Install Linux
             </div>
           </div>
@@ -77,7 +75,7 @@ function App() {  return (
         <div className="title self-start text-center">
           Resources for Noobies
         </div>
-        <div className="blueBox bg-custom_blue rounded-3xl h-[70vh] w-[80vw] md:h-[20vh] lg:h-[25vh] lg:w-[60vw] p-10 flex flex-col md:flex-row justify-between md:gap-5 lg:gap-0">
+        <div className="blueBox bg-custom_blue rounded-3xl h-[70vh] w-[80vw] md:h-[20vh] lg:h-[25vh] lg:w-[60vw] p-10 flex flex-col md:flex-row justify-between md:gap-5">
           <div className="textbox1 flex flex-col justify-center text-left">
             <div className="mb-2 text-white font-primary text-2xl">
               How to install Linux (With guides)
