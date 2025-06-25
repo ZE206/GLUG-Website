@@ -83,7 +83,7 @@ function App() {
             <div className="mb-2 text-white font-primary text-2xl">
               How to install Linux (With guides)
             </div>
-            <Link to="/linux-guide">
+            <Link to="/linux-installation-guide">
               <div className="learnMore text-xl text-custom_orange flex items-center">
                 Learn More
                 <FaArrowRight className="ml-2 rotate-315" />
