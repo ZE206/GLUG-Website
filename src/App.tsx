@@ -60,9 +60,11 @@ function App() {
             <div className="textContent text-2xl md:text-xl lg:text-2xl mb-4 md:mb-0">
               Tired of your computer begging for updates<br />every five minutes and crashing like it’s 1999?<br />Maybe it’s time to try Linux—because wasting<br />your life waiting on Windows is so 2000s
             </div>
-            <div className="installLinuxButton cursor-pointer bg-custom_blue h-[7vh] lg:w-[15vw] mb-2 mr-3 rounded-2xl flex justify-center items-center text-white text-2xl font-primary">
-              Install Linux
-            </div>
+            <Link to="/linux-installation-guide">
+              <div className="installLinuxButton cursor-pointer bg-custom_blue h-[7vh] lg:w-[15vw] mb-2 mr-3 rounded-2xl flex justify-center items-center text-white text-2xl font-primary">
+                Install Linux
+              </div>
+            </Link>
           </div>
           <div className="imageContainer">
             <img src="/weird_bob.png" alt="Hey" className="hidden md:block md:ml-10 md:mt-10 lg:ml-0 lg:mt-0" />
