@@ -21,7 +21,7 @@ function App() {
               We’re the GNU/Linux Users Group of NIT Calicut. From kernel to code, we dive deep into the world of FOSS, create impactful projects, and push the boundaries of what’s possible with linux and beyond.
             </div>
           </div>
-          <div className="imgContainer relative">
+          <div className="imgContainer">
             <img src="/hero_image.png" alt="" className="h-auto md:mr-[5vw] lg:mr-40 w-[80vw] md:w-[50vw] lg:w-auto object-cover rounded-md" />
           </div>
         </div>
