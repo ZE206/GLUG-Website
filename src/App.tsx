@@ -55,9 +55,9 @@ function App() {
       </div>
 
       <div className="ctaBlock flex justify-center p-3 mt-[5rem] md:mt-[10rem]">
-        <div className="greyBox bg-gray-200 rounded-3xl pl-5 md:pl-10 flex ">
+        <div className="greyBox bg-gray-200 rounded-3xl p-7 md:p-5 md:pl-10 flex justify-between font-semibold w-[90vw] text-center md:text-left md:w-[75vw]">
           <div className="textBox flex flex-col justify-around">
-            <div className="textContent text-2xl md:text-xl lg:text-2xl mb-4 md:mb-0">
+            <div className="textContent text-2xl md:text-xl lg:text-3xl mb-6 md:mb-3">
               Tired of your computer begging for updates<br />every five minutes and crashing like it’s 1999?<br />Maybe it’s time to try Linux—because wasting<br />your life waiting on Windows is so 2000s
             </div>
             <Link to="/linux-installation-guide">
@@ -67,7 +67,7 @@ function App() {
             </Link>
           </div>
           <div className="imageContainer">
-            <img src="/weird_bob.png" alt="Hey" className="hidden md:block md:ml-10 md:mt-10 lg:ml-0 lg:mt-0 translate-y-[2rem]" />
+            <img src="/weird_bob.png" alt="Hey" className="hidden md:block md:ml-10 md:mt-10 lg:ml-0 lg:mt-0 translate-y-[3.5rem]" />
           </div>
         </div>
       </div>
