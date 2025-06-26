@@ -9,7 +9,7 @@ function App() {
     return (
         <div className="w-full">
             <div className="titleBlock pt-8 md:pt-18 w-9/10 sm:w-88/100 mx-auto">
-                <div className="text-white text-4xl md:text-nowrap md:text-[3rem] lg:text-6xl mt-5 md:mt-0  md:px-3 lg:px-0 font-primary text-center font-semibold">
+                <div className="text-white text-4xl md:text-nowrap md:text-[3rem] lg:text-6xl mt-5 md:mt-0 mb-10 md:px-3 lg:px-0 font-primary text-center font-semibold">
                     May The Foss Be With You
                 </div>
                 <div className="body flex flex-col-reverse mt-5 mx-auto md:mt-0 md:gap-0 md:flex-row md:justify-between">
@@ -34,7 +34,7 @@ function App() {
                     <img
                         src="/hero_image.svg"
                         alt=""
-                        className="w-[80vw] max-w-[350px] sm:w-[45vw] md:w-[43vw] md:max-w-[500px] h-auto object-cover mx-auto -translate-x-3 md:-translate-x-0"
+                        className="w-[80vw] max-w-[350px] sm:w-[45vw] md:w-[43vw] md:max-w-[500px] h-auto object-contain mx-auto -translate-x-3 md:-translate-x-0"
                     />
                 </div>
             </div>
