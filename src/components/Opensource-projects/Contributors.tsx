@@ -35,7 +35,7 @@ const Contributors = () => {
         {
             name: "Vysakh Sheeja Premkumar",
             position: "CEO and Founder",
-            img: "/dummy-photo.svg",
+            img: "https://0.gravatar.com/avatar/896c730e451fd6a65a7407a21bd9b9618c713e77f75a709870bca24c3709638f?size=512&d=initials",
             linkedIn_link:
                 "https://wiki.fosscell.org/index.php?title=User:Vysakh",
         },
